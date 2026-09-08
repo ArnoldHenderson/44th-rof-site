@@ -11,13 +11,16 @@ export function Header() {
           </Link>
         </div>
         <nav className="flex items-center gap-4">
+          
           <Link href="/about" className="hover:text-gray-300">
             About
           </Link>
-          <Link href="https://discord.gg/44th" target="_blank" className="hover:text-gray-300">
+
+          <Link href="https://discord.gg/44th" target="_blank" className="hover:text-gray-300 border-r-yellow-500 border-r-2 pr-2">
             Join our Ranks!
             <img src="/media/images/icons/icon-discord.svg" alt="Discord Icon" className="inline-block ml-1 h-4" />
           </Link>
+
         </nav>
       </div>
     </header>
