@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --surface: #e5e7eb;
+  --surface-foreground: #111827;
 }
 
 @theme inline {
@@ -10,17 +12,28 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-ubuntu: var(--font-ubuntu);
+  --font-roboto: var(--font-roboto);
+  --font-noto: var(--font-noto-sans);
+}
+
+.site-header,
+.site-footer {
+  background: var(--surface);
+  color: var(--surface-foreground);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --surface: #0f1219;
+    --surface-foreground: #f9fafb;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ubuntu), sans-serif;
 }
