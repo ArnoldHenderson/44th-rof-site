@@ -8,6 +8,7 @@ const photos = [
   "/media/images/regiment_photos/regphoto2.png",
   "/media/images/regiment_photos/regphoto3.png",
   "/media/images/regiment_photos/regphoto4.png",
+  "/media/images/regiment_photos/regphoto5.png",
 ];
 
 export function HeroCarousel() {
@@ -41,7 +42,7 @@ export function HeroCarousel() {
           Looking for the best way to play Holdfast?
           <br />
           <span className="font-noto text-yellow-300">
-            Join the 44th Regiment of Foot!
+            <i><b>Join the 44th Regiment of Foot!</b></i>
           </span>
         </h1>
 
