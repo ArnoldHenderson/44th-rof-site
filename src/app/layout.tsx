@@ -56,11 +56,11 @@ export const metadata: Metadata = {
     title: "44th Regiment of Foot - Official Site",
     description:
       "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War. 44th on top!",
-    url: "https://www.44thregimentoffoot.com",
+    url: "https://44th-rof-site.vercel.app",
     siteName: "44th Regiment of Foot - Official Site",
     images: [
       {
-        url: "https://www.44thregimentoffoot.com/images/branding/og-image.png",
+        url: "https://44th-rof-site.vercel.app/media/images/branding/og-image.png",
         width: 1100,
         height: 440,
         alt: "44th Regiment of Foot",
