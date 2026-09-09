@@ -1,8 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/media/images/branding/logo.svg";
-import discordIcon from "@/public/media/images/icons/icon-discord.svg";
-import kofiIcon from "@/public/media/images/icons/kofi-symbol.svg";
 
 export function Header() {
   return (
@@ -10,7 +7,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <Image
-            src={logo}
+            src="/media/images/branding/logo.svg"
             alt="44th Regiment of Foot Logo"
             width={52}
             height={52}
@@ -38,7 +35,7 @@ export function Header() {
           >
             Join our Ranks!
             <Image
-              src={discordIcon}
+              src="/media/images/icons/icon-discord.svg"
               alt="Discord Icon"
               className="inline-block ml-1 h-4 w-4"
               width={16}
@@ -53,7 +50,7 @@ export function Header() {
           >
             Donate
             <Image
-              src={kofiIcon}
+              src="/media/images/icons/kofi-symbol.svg"
               alt="Ko-fi Icon"
               className="inline-block ml-1 h-4 w-4"
               width={16}
