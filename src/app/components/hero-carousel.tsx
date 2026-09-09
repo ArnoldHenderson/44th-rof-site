@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import regphoto1 from "@/public/media/images/regiment_photos/regphoto1.png";
+import regphoto2 from "@/public/media/images/regiment_photos/regphoto2.png";
+import regphoto3 from "@/public/media/images/regiment_photos/regphoto3.png";
+import regphoto4 from "@/public/media/images/regiment_photos/regphoto4.png";
+import regphoto5 from "@/public/media/images/regiment_photos/regphoto5.png";
 
-const photos = [
-  "/media/images/regiment_photos/regphoto1.png",
-  "/media/images/regiment_photos/regphoto2.png",
-  "/media/images/regiment_photos/regphoto3.png",
-  "/media/images/regiment_photos/regphoto4.png",
-  "/media/images/regiment_photos/regphoto5.png",
-];
+const photos = [regphoto1, regphoto2, regphoto3, regphoto4, regphoto5];
 
 export function HeroCarousel() {
   const [activePhoto, setActivePhoto] = useState(0);
@@ -26,7 +25,7 @@ export function HeroCarousel() {
     <div className="relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
       {photos.map((photo, index) => (
         <Image
-          key={photo}
+          key={index}
           src={photo}
           alt=""
           fill
