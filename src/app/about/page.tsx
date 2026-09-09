@@ -34,6 +34,9 @@ export default function About() {
             dolor, sed pariatur neque eaque aliquid voluptas tenetur suscipit!
             Incidunt, tenetur.
           </p>
+          <p className="mb-6 text-2xl text-yellow-300 font-bold">
+            Join us today to keep the 44th on Top!
+          </p>
         </div>
 
         <br />
