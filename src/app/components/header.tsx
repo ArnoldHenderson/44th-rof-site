@@ -22,6 +22,13 @@ export function Header() {
         </div>
         <nav className="flex items-center gap-4">
           <Link
+            href="/"
+            className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
+          >
+            Home
+          </Link>
+
+          <Link
             href="/about"
             className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
           >
