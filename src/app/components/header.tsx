@@ -5,22 +5,53 @@ export function Header() {
     <header className="site-header p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/media/images/branding/logo.svg" alt="44th Regiment of Foot Logo" className="mr-2 h-12" />
-          <Link href="/" className="text-xl font-ubuntu hover:text-gray-300">
+          <img
+            src="/media/images/branding/logo.svg"
+            alt="44th Regiment of Foot Logo"
+            width={52}
+            height={52}
+            className="mr-2"
+          />
+          <Link
+            href="/"
+            className="text-xl font-ubuntu hover:text-gray-700 dark:hover:text-gray-300"
+          >
             44th Regiment of Foot
           </Link>
         </div>
         <nav className="flex items-center gap-4">
-          
-          <Link href="/about" className="hover:text-gray-300">
+          <Link
+            href="/about"
+            className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
+          >
             About
           </Link>
 
-          <Link href="https://discord.gg/44th" target="_blank" className="hover:text-gray-300 border-r-yellow-500 border-r-2 pr-2">
+          <Link
+            href="https://discord.gg/44th"
+            target="_blank"
+            className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
+          >
             Join our Ranks!
-            <img src="/media/images/icons/icon-discord.svg" alt="Discord Icon" className="inline-block ml-1 h-4" />
+            <img
+              src="/media/images/icons/icon-discord.svg"
+              alt="Discord Icon"
+              className="inline-block ml-1 h-4"
+            />
           </Link>
 
+          <Link
+            href="https://ko-fi.com/44throf"
+            target="_blank"
+            className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
+          >
+            Donate
+            <img
+              src="/media/images/icons/kofi-symbol.svg"
+              alt="Ko-fi Icon"
+              className="inline-block ml-1 h-4"
+            />
+          </Link>
         </nav>
       </div>
     </header>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -23,7 +23,7 @@ export function HeroCarousel() {
   }, []);
 
   return (
-    <div className="relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 shadow-lg">
+    <div className="relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
       {photos.map((photo, index) => (
         <Image
           key={photo}
@@ -42,21 +42,40 @@ export function HeroCarousel() {
           Looking for the best way to play Holdfast?
           <br />
           <span className="font-noto text-yellow-300">
-            <i><b>Join the 44th Regiment of Foot!</b></i>
+            <i>
+              <u>Join the 44th Regiment of Foot!</u>
+            </i>
           </span>
         </h1>
 
         <h2 className="mb-6 text-xl font-bold font-noto">
-          We are a group of lads who like to play the game casually, we are centred around fun when it comes to the game
-          such as chaotic line formations which usually end up with us getting shot by artillery, but it is always a laugh.
-          <br /><br />
-          With loads of ranks to climb and a great community to be a part of,
-          we are always looking for more <span className="line-through">cannon fodder</span> members to join our ranks!
-          <br /><br />
-          If you are interested and want to see more, then go to our about page here!
+          We are a group of lads who like to play the game casually, we are
+          centred around fun when it comes to the game such as chaotic line
+          formations which usually end up with us getting shot by artillery, but
+          it is always a laugh.
+          <br />
+          <br />
+          With loads of ranks to climb and a great community to be a part of, we
+          are always looking for more{" "}
+          <span className="line-through">cannon fodder</span> members to join
+          our ranks!
+          <br />
+          <br />
+          If you are interested and want to see more, then go to our about page
+          here!
+          <br />
+          <br />
+          We have{" "}
+          <span className="italic underline text-yellow-600">
+            EU, NA and OCE
+          </span>{" "}
+          events for you to dabble in!
         </h2>
 
-        <a href="/about" className="mt-auto rounded bg-yellow-600 px-4 py-2 text-center font-bold text-white hover:bg-yellow-700">
+        <a
+          href="/about"
+          className="mt-auto rounded bg-yellow-600 px-4 py-2 text-center font-bold text-white hover:bg-yellow-700"
+        >
           About Us
         </a>
       </div>

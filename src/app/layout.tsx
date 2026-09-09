@@ -32,12 +32,19 @@ const notoSans = Noto_Sans({
 
 export const metadata: Metadata = {
   title: "44th Regiment of Foot - Official Site",
-  description: "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War.",
-  keywords: ["44th Regiment of Foot", "Holdfast: Nations at War", "Official Site", "holdfast regiment"],
+  description:
+    "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War.",
+  keywords: [
+    "44th Regiment of Foot",
+    "Holdfast: Nations at War",
+    "Official Site",
+    "holdfast regiment",
+  ],
   authors: [{ name: "44th Regiment of Foot Regiment Command" }],
   openGraph: {
     title: "44th Regiment of Foot - Official Site",
-    description: "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War. 44th on top!",
+    description:
+      "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War. 44th on top!",
     url: "https://www.44thregimentoffoot.com",
     siteName: "44th Regiment of Foot - Official Site",
     images: [
@@ -49,7 +56,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_GB",
-    type: "website"
+    type: "website",
   },
 };
 
