@@ -1,6 +1,6 @@
 # 44th Regiment of Foot website
 
-## This website was created to help boost recriutment for the 44th Regiment in Holdfast: Nations at War
+## This website was created to help boost recruitment for the 44th Regiment in Holdfast: Nations at War
 
 This websites framework is Next.js using TypeScript.
 
