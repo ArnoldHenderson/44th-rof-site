@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
-import { InfoCards } from "../components/info-cards";
+import { SpecialistCards } from "@/app/components/specialist-companies";
+import { InfoCards } from "@/app/components/info-cards";
 
 export default function About() {
   return (
@@ -45,7 +46,6 @@ export default function About() {
               <b>
                 <i>44th on top!</i>
               </b>
-              .
             </p>
             <p className="mb-6 text-2xl text-yellow-300 font-bold">
               Join us today to help keep the 44th on Top!
@@ -59,21 +59,30 @@ export default function About() {
           </div>
         </div>
 
-        <br />
         <hr className="my-8 border-gray-300" />
+
+        <div className="container mx-auto">
+          <div className="mb-6 left-10">
+            <h1 className="mb-6 text-3xl font-bold font-noto">
+              The 44th Special Companies
+            </h1>
+            <p className="mb-6 text-1xl">
+              As stated above, joining a special company in the 44th will give
+              you more ways to experience Holdfast. We offer 3 specials and 3
+              auxiliary companies. More information about our specials and
+              auxiliaries below.
+            </p>
+          </div>
+        </div>
+
+        <SpecialistCards />
+
+        <br />
+        <hr className="mb-8 border-gray-300" />
         <br />
 
-        <div className="mb-6 left-10">
-          <h1 className="mb-6 text-3xl font-bold font-noto">
-            Add more information here
-          </h1>
-
-          <div className="container mx-auto mt-8">
-            <InfoCards />
-          </div>
-
-          <br />
-          <br />
+        <div className="container mx-auto mt-8">
+          <InfoCards />
         </div>
       </main>
 
