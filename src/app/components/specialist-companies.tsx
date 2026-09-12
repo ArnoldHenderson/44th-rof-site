@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+{
+  /* 
+    This component displays the specials on the about 44th page.
+  */
+}
+
 export function SpecialistCards() {
   return (
     <>

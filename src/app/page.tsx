@@ -3,6 +3,9 @@ import { Footer } from "./components/footer";
 import { HeroCarousel } from "@/app/components/hero-carousel";
 import { InfoCards } from "@/app/components/info-cards";
 
+{
+  /* Home page, add more elements when needed */
+}
 export default function Home() {
   return (
     <>
