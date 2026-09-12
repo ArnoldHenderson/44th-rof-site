@@ -22,18 +22,15 @@ export function SpecialistCards() {
               The 44th Skirmisher Company
             </h1>
             <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga,
-              illo deleniti dolorem nesciunt ex iure, consectetur repellat, nam
-              ipsum maiores blanditiis quae ea quasi cumque ab facilis omnis
-              dolor facere culpa. Minus soluta cupiditate iusto amet fugiat
-              enim, omnis eos eveniet minima incidunt eius, aliquid facilis
-              distinctio sequi nam et eligendi quod repellendus sit. Quia quis
-              impedit amet asperiores molestiae laborum cum eius. Beatae
-              explicabo possimus labore dicta! Placeat dolorem nihil excepturi
-              minus et consectetur, inventore vero cupiditate sit odit veniam
-              omnis corrupti deserunt hic aliquid ipsam, doloremque
-              exercitationem ullam quam dicta est laudantium sequi sed! Quia,
-              eos blanditiis.
+              Swift and deadly, the Light Infantry and Riflemen are the first on
+              the battlefield. They harass the main force, hit fast and
+              manoeuver, whittling down the numbers ready for the 44th Line to
+              decimate the remaining enemy. The 44th Skirmisher Company offers
+              tailored skirmisher events, alongside Skirmisher gameplay in
+              select linebattles. With a bounty board, trophy hall and a weekly
+              Skirmisher leaderboard, there's plenty here to get your teeth
+              into. <br />
+              <span className="bold italic">- 44th | Daddy Edge</span>
             </p>
           </div>
         </div>
@@ -54,18 +51,20 @@ export function SpecialistCards() {
               The 44th Cavalry Company
             </h1>
             <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga,
-              illo deleniti dolorem nesciunt ex iure, consectetur repellat, nam
-              ipsum maiores blanditiis quae ea quasi cumque ab facilis omnis
-              dolor facere culpa. Minus soluta cupiditate iusto amet fugiat
-              enim, omnis eos eveniet minima incidunt eius, aliquid facilis
-              distinctio sequi nam et eligendi quod repellendus sit. Quia quis
-              impedit amet asperiores molestiae laborum cum eius. Beatae
-              explicabo possimus labore dicta! Placeat dolorem nihil excepturi
-              minus et consectetur, inventore vero cupiditate sit odit veniam
-              omnis corrupti deserunt hic aliquid ipsam, doloremque
-              exercitationem ullam quam dicta est laudantium sequi sed! Quia,
-              eos blanditiis.
+              The 44th Regiment of Foot Cavalry is, without question, the finest
+              special in the regiment—a perfect combination of aggression,
+              discipline, skill and absolute battlefield dominance. Under the
+              almighty reign of Skeps, the commander and creator of the 44th
+              Cavalry, the unit cemented its place among the elite by taking
+              down the 42nd Cav, a Top 3 Cavalry team, during the regiments
+              FIRST ever Cav League—a result that speaks for itself. The 44th
+              don't need excuses, gimmicks or endless backline support; they
+              turn up, mount up and deliver. The Artillery can keep firing at
+              everything except the enemy, the Skirmishers can keep hiding in
+              the bushes, and the rest can argue over who's second best—the 44th
+              Cavalry are already at the top.
+              <br />
+              <span className="bold italic">- 44th | Skeps</span>
             </p>
           </div>
         </div>
@@ -86,18 +85,18 @@ export function SpecialistCards() {
               The 44th Artillery Company
             </h1>
             <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga,
-              illo deleniti dolorem nesciunt ex iure, consectetur repellat, nam
-              ipsum maiores blanditiis quae ea quasi cumque ab facilis omnis
-              dolor facere culpa. Minus soluta cupiditate iusto amet fugiat
-              enim, omnis eos eveniet minima incidunt eius, aliquid facilis
-              distinctio sequi nam et eligendi quod repellendus sit. Quia quis
-              impedit amet asperiores molestiae laborum cum eius. Beatae
-              explicabo possimus labore dicta! Placeat dolorem nihil excepturi
-              minus et consectetur, inventore vero cupiditate sit odit veniam
-              omnis corrupti deserunt hic aliquid ipsam, doloremque
-              exercitationem ullam quam dicta est laudantium sequi sed! Quia,
-              eos blanditiis.
+              The 44th Artillery was a proud formation forged in the turmoil of
+              the Napoleonic Wars, where discipline, courage, and mastery of the
+              gun determined the fate of the battlefield. Its artillerymen stood
+              beside their cannon under the thunder of enemy fire, loading and
+              firing with speed and precision while supporting the infantry and
+              cavalry around them. Through smoke, shot, and confusion, the men
+              of the 44th were expected to hold their ground and serve their
+              guns without hesitation. Their strength lay not only in the
+              destructive power of their artillery, but in the courage,
+              brotherhood, and unwavering discipline of the soldiers who served
+              it. <br />
+              <span className="bold italic">- 44th | JoshA</span>
             </p>
           </div>
         </div>

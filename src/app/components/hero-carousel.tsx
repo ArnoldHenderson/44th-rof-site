@@ -4,11 +4,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const photos = [
+  "/media/images/regiment_photos/regphoto8.png",
   "/media/images/regiment_photos/regphoto1.png",
   "/media/images/regiment_photos/regphoto2.png",
   "/media/images/regiment_photos/regphoto3.png",
   "/media/images/regiment_photos/regphoto4.png",
   "/media/images/regiment_photos/regphoto5.png",
+  "/media/images/regiment_photos/regphoto6.png",
+  "/media/images/regiment_photos/regphoto7.png",
 ];
 
 export function HeroCarousel() {
