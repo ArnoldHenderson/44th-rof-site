@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+{
+  /* Photos for the carousel */
+}
 const photos = [
   "/media/images/regiment_photos/regphoto8.png",
   "/media/images/regiment_photos/regphoto1.png",
@@ -15,6 +18,9 @@ const photos = [
 ];
 
 export function HeroCarousel() {
+  {
+    /* Code for the carousel, swaps the image every 5 seconds */
+  }
   const [activePhoto, setActivePhoto] = useState(0);
 
   useEffect(() => {
@@ -27,6 +33,7 @@ export function HeroCarousel() {
 
   return (
     <div className="relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
+      {/* Function updates the image */}
       {photos.map((photo, index) => (
         <Image
           key={index}
@@ -40,6 +47,7 @@ export function HeroCarousel() {
         />
       ))}
 
+      {/* Hero Card */}
       <div className="relative z-10 m-4 flex min-h-96 max-w-2xl flex-col rounded-lg bg-black/65 p-6 text-white backdrop-blur-[2px] md:m-6">
         <h1 className="mb-6 text-3xl font-bold font-noto">
           Looking for the best way to play Holdfast?
@@ -75,6 +83,7 @@ export function HeroCarousel() {
           events for you to dabble in!
         </h2>
 
+        {/* About us button */}
         <a
           href="/about"
           className="mt-auto rounded bg-yellow-600 px-4 py-2 text-center font-bold text-white hover:bg-yellow-700"
