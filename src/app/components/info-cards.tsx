@@ -16,6 +16,7 @@ export function InfoCards() {
         </p>
         <Link
           href="https://discord.gg/44th"
+          target="_blank"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Discord
@@ -65,6 +66,7 @@ export function InfoCards() {
         </p>
         <Link
           href="https://discord.gg/kRVEVpRB7F"
+          target="_blank"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Discord
