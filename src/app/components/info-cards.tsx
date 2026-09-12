@@ -3,9 +3,9 @@ import Link from "next/link";
 export function InfoCards() {
   return (
     <div className="flex flex-wrap justify-center gap-4">
-      <div className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg">
+      <div className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100">
         <h3 className="text-xl font-bold mb-4">
-          <span className="bg-blue-600 text-white py-1 px-2 rounded">
+          <span className="bg-blue-900 text-white py-1 px-2 rounded">
             Join Our Discord
           </span>
         </h3>
@@ -16,15 +16,16 @@ export function InfoCards() {
         </p>
         <Link
           href="https://discord.gg/44th"
+          target="_blank"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
-          Join Discord
+          Discord
         </Link>
       </div>
 
-      <div className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg">
+      <div className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100">
         <h3 className="text-xl font-bold mb-4">
-          <span className="bg-blue-600 text-white py-1 px-2 rounded">
+          <span className="bg-blue-900 text-white py-1 px-2 rounded">
             Follow Us on Social Media
           </span>
         </h3>
@@ -49,6 +50,26 @@ export function InfoCards() {
           className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ml-2"
         >
           TikTok
+        </Link>
+      </div>
+
+      <div className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100">
+        <h3 className="text-xl font-bold mb-4">
+          <span className="bg-blue-900 text-white py-1 px-2 rounded">
+            Interested in 44th events?
+          </span>
+        </h3>
+        <p className="mb-4">
+          Join our community events centre and request to join, we have
+          Skirmisher events on Friday and Saturday and a Cavalry event on
+          Mondays.
+        </p>
+        <Link
+          href="https://discord.gg/kRVEVpRB7F"
+          target="_blank"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Discord
         </Link>
       </div>
     </div>
