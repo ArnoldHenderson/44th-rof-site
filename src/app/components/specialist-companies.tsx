@@ -7,7 +7,7 @@ import Link from "next/link";
   */
 }
 
-export function SpecialistCards() {
+export function SpecialistCards(): import("react").JSX.Element {
   return (
     <>
       {/* Specials Block */}

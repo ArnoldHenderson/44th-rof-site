@@ -1,4 +1,4 @@
-export function Footer() {
+export function Footer(): import("react").JSX.Element {
   return (
     <>
       {/* Site Footer, add more elements when needed */}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export function Header() {
+export function Header(): import("react").JSX.Element {
   return (
     <header className="site-header p-4">
       <div className="container mx-auto flex items-center justify-between">

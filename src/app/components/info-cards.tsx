@@ -26,7 +26,7 @@ import Link from "next/link";
   */
 }
 
-export function InfoCards() {
+export function InfoCards(): import("react").JSX.Element {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {}
