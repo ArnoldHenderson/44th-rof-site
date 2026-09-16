@@ -60,54 +60,60 @@ function CreateOCEScheduleTableElements() {
 export default function EventSchedule(): import("react").JSX.Element {
   return (
     <>
-      {/* EU */}
-      <h1 className="text-3xl underline bold font-ubuntu">EU Event Schedule</h1>
-      <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
-        <table className="w-full text-sm text-left rtl:text-right text-body m-2">
-          <thead className="border-b border-default">
-            <tr>
-              <th>Day</th>
-              <th>Event</th>
-              <th>Time (EU/London)</th>
-            </tr>
-          </thead>
+      <div className="z-10 bg-gray-950 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.10)]">
+        {/* EU */}
+        <h1 className="text-3xl underline bold font-ubuntu">
+          EU Event Schedule
+        </h1>
+        <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
+          <table className="w-full text-sm text-left rtl:text-right text-body m-2">
+            <thead className="border-b border-default">
+              <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Time (EU/London)</th>
+              </tr>
+            </thead>
 
-          <tbody>{CreateEUScheduleTableElements()}</tbody>
-        </table>
-      </div>
+            <tbody>{CreateEUScheduleTableElements()}</tbody>
+          </table>
+        </div>
 
-      {/* NA */}
-      <h1 className="text-3xl underline bold font-ubuntu">NA Event Schedule</h1>
-      <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
-        <table className="w-full text-sm text-left rtl:text-right text-body m-2">
-          <thead className="border-b border-default">
-            <tr>
-              <th>Day</th>
-              <th>Event</th>
-              <th>Time (EU/London)</th>
-            </tr>
-          </thead>
+        {/* NA */}
+        <h1 className="text-3xl underline bold font-ubuntu">
+          NA Event Schedule
+        </h1>
+        <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
+          <table className="w-full text-sm text-left rtl:text-right text-body m-2">
+            <thead className="border-b border-default">
+              <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Time (EU/London)</th>
+              </tr>
+            </thead>
 
-          <tbody>{CreateNAScheduleTableElements()}</tbody>
-        </table>
-      </div>
+            <tbody>{CreateNAScheduleTableElements()}</tbody>
+          </table>
+        </div>
 
-      {/* OCE */}
-      <h1 className="text-3xl underline bold font-ubuntu">
-        OCE Event Schedule
-      </h1>
-      <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
-        <table className="w-full text-sm text-left rtl:text-right text-body m-2">
-          <thead className="border-b border-default">
-            <tr>
-              <th>Day</th>
-              <th>Event</th>
-              <th>Time (EU/London)</th>
-            </tr>
-          </thead>
+        {/* OCE */}
+        <h1 className="text-3xl underline bold font-ubuntu">
+          OCE Event Schedule
+        </h1>
+        <div className="mb-6 table-auto relative overflow-x-auto bg-gray-800 shadow-xs rounded-base border border-default">
+          <table className="w-full text-sm text-left rtl:text-right text-body m-2">
+            <thead className="border-b border-default">
+              <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Time (EU/London)</th>
+              </tr>
+            </thead>
 
-          <tbody>{CreateOCEScheduleTableElements()}</tbody>
-        </table>
+            <tbody>{CreateOCEScheduleTableElements()}</tbody>
+          </table>
+        </div>
       </div>
     </>
   );
