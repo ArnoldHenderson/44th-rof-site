@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header(): import("react").JSX.Element {
   return (
@@ -16,6 +17,7 @@ export function Header(): import("react").JSX.Element {
           />
           <Link
             href="/"
+            title="Go to Home Page"
             className="text-xl font-ubuntu hover:text-gray-700 dark:hover:text-gray-300"
           >
             44th Regiment of Foot
@@ -27,6 +29,7 @@ export function Header(): import("react").JSX.Element {
           {/* Home */}
           <Link
             href="/"
+            title="Go to Home Page"
             className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
           >
             Home
@@ -35,6 +38,7 @@ export function Header(): import("react").JSX.Element {
           {/* About */}
           <Link
             href="/about"
+            title="Learn more about us"
             className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
           >
             About
@@ -44,6 +48,7 @@ export function Header(): import("react").JSX.Element {
           <Link
             href="https://discord.gg/44th"
             target="_blank"
+            title="Join our Discord"
             className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
           >
             Join our Ranks!
@@ -60,6 +65,7 @@ export function Header(): import("react").JSX.Element {
           <Link
             href="https://ko-fi.com/44throf"
             target="_blank"
+            title="Support us on Ko-fi"
             className="px-3 py-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
           >
             Donate
@@ -71,6 +77,9 @@ export function Header(): import("react").JSX.Element {
               height={16}
             />
           </Link>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
         </nav>
       </div>
     </header>

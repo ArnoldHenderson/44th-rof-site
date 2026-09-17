@@ -1,10 +1,18 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --surface: #e5e7eb;
   --surface-foreground: #111827;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --surface: #0f1219;
+  --surface-foreground: #f9fafb;
 }
 
 @theme inline {
@@ -21,15 +29,6 @@
 .site-footer {
   background: var(--surface);
   color: var(--surface-foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --surface: #0f1219;
-    --surface-foreground: #f9fafb;
-  }
 }
 
 body {

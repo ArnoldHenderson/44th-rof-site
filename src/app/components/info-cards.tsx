@@ -48,6 +48,8 @@ export function InfoCards(): import("react").JSX.Element {
         <Link
           href="https://discord.gg/44th"
           target="_blank"
+          title="Join our Discord"
+          rel="noopener noreferrer"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Discord
@@ -72,6 +74,7 @@ export function InfoCards(): import("react").JSX.Element {
         <Link
           href="https://www.youtube.com/@44threg"
           target="_blank"
+          title="Subscribe to our YouTube"
           rel="noopener noreferrer"
           className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
         >
@@ -81,6 +84,7 @@ export function InfoCards(): import("react").JSX.Element {
         <Link
           href="https://www.tiktok.com/@44thregofficial"
           target="_blank"
+          title="Follow us on TikTok"
           rel="noopener noreferrer"
           className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ml-2"
         >
@@ -106,6 +110,8 @@ export function InfoCards(): import("react").JSX.Element {
         <Link
           href="https://discord.gg/kRVEVpRB7F"
           target="_blank"
+          rel="noopener noreferrer"
+          title="Join our Community Events Centre"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Discord
