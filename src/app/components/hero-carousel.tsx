@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 {
@@ -17,7 +18,7 @@ const photos = [
   "/media/images/regiment_photos/regphoto7.png",
 ];
 
-export function HeroCarousel() {
+export function HeroCarousel(): import("react").JSX.Element {
   {
     /* Code for the carousel, swaps the image every 5 seconds */
   }
@@ -52,7 +53,7 @@ export function HeroCarousel() {
         <h1 className="mb-6 text-3xl font-bold font-noto">
           Looking for the best way to play Holdfast?
           <br />
-          <span className="font-noto text-yellow-300">
+          <span className="font-noto text-yellow-400">
             <i>
               <u>Join the 44th Regiment of Foot!</u>
             </i>
@@ -84,12 +85,14 @@ export function HeroCarousel() {
         </h2>
 
         {/* About us button */}
-        <a
+        <Link
           href="/about"
+          title="Learn more about us"
+          rel="noopener noreferrer"
           className="mt-auto rounded bg-yellow-600 px-4 py-2 text-center font-bold text-white hover:bg-yellow-700"
         >
           About Us
-        </a>
+        </Link>
       </div>
     </div>
   );

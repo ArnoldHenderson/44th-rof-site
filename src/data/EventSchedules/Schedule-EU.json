@@ -1,0 +1,89 @@
+{
+  "monday": {
+    "event1": {
+      "name": "44th Hosted Cavalry Event",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "CSG Hosted Naval Battle",
+      "timeuk": "19:00"
+    },
+
+    "event3": {
+      "name": "CSG Hosted Private Linebattle",
+      "timeuk": "20:00"
+    }
+  },
+
+  "tuesday": {
+    "event1": {
+      "name": "Regiment Training",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "20:00"
+    }
+  },
+
+  "wednesday": {
+    "event1": {
+      "name": "Le Merc Hosted Naval Battle",
+      "timeuk": "18:45"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "20:00"
+    }
+  },
+
+  "thursday": {
+    "event1": {
+      "name": "44th Pub Stomp",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "21:00"
+    }
+  },
+
+  "friday": {
+    "event1": {
+      "name": "44th Hosted Skirmisher Battle",
+      "timeuk": "19:00"
+    },
+    "event2": {
+      "name": "SF Hosted Public Linebattle",
+      "timeuk": "20:15"
+    }
+  },
+
+  "saturday": {
+    "event1": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "20:00"
+    }
+  },
+
+  "sunday": {
+    "event1": {
+      "name": "44th GYN Training",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "20:00"
+    },
+
+    "event3": {
+      "name": "44th Promotion Ceremony",
+      "timeuk": "21:00"
+    }
+  }
+}

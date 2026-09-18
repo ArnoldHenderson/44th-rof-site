@@ -1,0 +1,22 @@
+{
+  "wednesday": {
+    "event1": {
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
+    }
+  },
+
+  "friday": {
+    "event1": {
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
+    }
+  },
+
+  "saturday": {
+    "event1": {
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
+    }
+  }
+}

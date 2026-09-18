@@ -1,0 +1,65 @@
+{
+  "sunday": {
+    "event1": {
+      "name": "63e Private Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "monday": {
+    "event1": {
+      "name": "Regiment Training",
+      "timeuk": "00:00"
+    },
+
+    "event2": {
+      "name": "7.Fuß Private Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "tuesday": {
+    "event1": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "wednesday": {
+    "event1": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "thursday": {
+    "event1": {
+      "name": "HAX Private Naval Battle",
+      "timeuk": "20:00"
+    },
+
+    "event2": {
+      "name": "TRR x TRRB Private Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "friday": {
+    "event1": {
+      "name": "45e Linebattle/Conquest Event",
+      "timeuk": "01:00"
+    }
+  },
+
+  "saturday": {
+    "event1": {
+      "name": "1DR Private Linebattle",
+      "timeuk": "23:00"
+    },
+
+    "event2": {
+      "name": "7.Fuß Private Linebattle",
+      "timeuk": "01:00"
+    }
+  }
+}
