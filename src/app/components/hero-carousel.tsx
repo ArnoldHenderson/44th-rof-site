@@ -53,7 +53,7 @@ export function HeroCarousel(): import("react").JSX.Element {
         <h1 className="mb-6 text-3xl font-bold font-noto">
           Looking for the best way to play Holdfast?
           <br />
-          <span className="font-noto text-yellow-300">
+          <span className="font-noto text-yellow-400">
             <i>
               <u>Join the 44th Regiment of Foot!</u>
             </i>

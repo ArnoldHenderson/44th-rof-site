@@ -1,64 +1,88 @@
 {
   "monday": {
     "event1": {
-      "name": "Test Event 1",
-      "timeuk": "20:00"
+      "name": "44th Hosted Cavalry Event",
+      "timeuk": "19:00"
     },
 
     "event2": {
-      "name": "Test Event 2",
-      "timeuk": "21:00"
+      "name": "CSG Hosted Naval Battle",
+      "timeuk": "19:00"
+    },
+
+    "event3": {
+      "name": "CSG Hosted Private Linebattle",
+      "timeuk": "20:00"
     }
   },
 
   "tuesday": {
     "event1": {
-      "name": "Test Event 3",
+      "name": "Regiment Training",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
       "timeuk": "20:00"
     }
   },
 
   "wednesday": {
     "event1": {
-      "name": "Test Event 4",
+      "name": "Le Merc Hosted Naval Battle",
+      "timeuk": "18:45"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
       "timeuk": "20:00"
     }
   },
 
   "thursday": {
     "event1": {
-      "name": "Test Event 5",
-      "timeuk": "20:00"
+      "name": "44th Pub Stomp",
+      "timeuk": "19:00"
+    },
+
+    "event2": {
+      "name": "AGS Public Linebattle",
+      "timeuk": "21:00"
     }
   },
 
   "friday": {
     "event1": {
-      "name": "Test Event 6",
-      "timeuk": "20:00"
+      "name": "44th Hosted Skirmisher Battle",
+      "timeuk": "19:00"
+    },
+    "event2": {
+      "name": "SF Hosted Public Linebattle",
+      "timeuk": "20:15"
     }
   },
 
   "saturday": {
     "event1": {
-      "name": "Test Event 7",
+      "name": "AGS Public Linebattle",
       "timeuk": "20:00"
     }
   },
 
   "sunday": {
     "event1": {
-      "name": "Test Event 8",
+      "name": "44th GYN Training",
       "timeuk": "19:00"
     },
 
     "event2": {
-      "name": "Test Event 9",
+      "name": "AGS Public Linebattle",
       "timeuk": "20:00"
     },
 
     "event3": {
-      "name": "Test Event 10",
+      "name": "44th Promotion Ceremony",
       "timeuk": "21:00"
     }
   }

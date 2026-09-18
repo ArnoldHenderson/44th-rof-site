@@ -70,7 +70,7 @@ export function Header(): import("react").JSX.Element {
           >
             Donate
             <Image
-              src="/media/images/icons/kofi-symbol.svg"
+              src="/media/images/icons/icon-kofi.svg"
               alt="Ko-fi Icon"
               className="inline-block ml-1 h-4 w-4"
               width={16}

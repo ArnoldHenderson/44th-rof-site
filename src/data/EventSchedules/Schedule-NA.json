@@ -1,65 +1,65 @@
 {
+  "sunday": {
+    "event1": {
+      "name": "63e Private Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
   "monday": {
     "event1": {
-      "name": "Test Event 1",
-      "timeuk": "20:00"
+      "name": "Regiment Training",
+      "timeuk": "00:00"
     },
 
     "event2": {
-      "name": "Test Event 2",
-      "timeuk": "21:00"
+      "name": "7.Fuß Private Linebattle",
+      "timeuk": "01:00"
     }
   },
 
   "tuesday": {
     "event1": {
-      "name": "Test Event 3",
-      "timeuk": "20:00"
+      "name": "AGS Public Linebattle",
+      "timeuk": "01:00"
     }
   },
 
   "wednesday": {
     "event1": {
-      "name": "Test Event 4",
-      "timeuk": "20:00"
+      "name": "AGS Public Linebattle",
+      "timeuk": "01:00"
     }
   },
 
   "thursday": {
     "event1": {
-      "name": "Test Event 5",
+      "name": "HAX Private Naval Battle",
       "timeuk": "20:00"
+    },
+
+    "event2": {
+      "name": "TRR x TRRB Private Linebattle",
+      "timeuk": "01:00"
     }
   },
 
   "friday": {
     "event1": {
-      "name": "Test Event 6",
-      "timeuk": "20:00"
+      "name": "45e Linebattle/Conquest Event",
+      "timeuk": "01:00"
     }
   },
 
   "saturday": {
     "event1": {
-      "name": "Test Event 7",
-      "timeuk": "20:00"
-    }
-  },
-
-  "sunday": {
-    "event1": {
-      "name": "Test Event 8",
-      "timeuk": "19:00"
+      "name": "1DR Private Linebattle",
+      "timeuk": "23:00"
     },
 
     "event2": {
-      "name": "Test Event 9",
-      "timeuk": "20:00"
-    },
-
-    "event3": {
-      "name": "Test Event 10",
-      "timeuk": "21:00"
+      "name": "7.Fuß Private Linebattle",
+      "timeuk": "01:00"
     }
   }
 }

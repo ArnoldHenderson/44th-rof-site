@@ -48,7 +48,7 @@ export default function About() {
                 <i>44th on top!</i>
               </b>
             </p>
-            <p className="mb-6 text-2xl text-yellow-300 font-bold">
+            <p className="mb-6 text-2xl text-yellow-400 font-bold">
               Join us today to help keep the 44th on Top!
             </p>
             <Image
@@ -59,6 +59,8 @@ export default function About() {
             />
           </div>
         </div>
+
+        <hr className="my-8 border-gray-300" />
 
         <div className="container mx-auto">
           <div className="mb-6 left-10">
@@ -81,6 +83,8 @@ export default function About() {
                 leader training, melee practice, or fun.
               </p>
               <br />
+
+              {/* Opens the Next event popup on this page */}
               <NextEventLink />
             </div>
           </div>

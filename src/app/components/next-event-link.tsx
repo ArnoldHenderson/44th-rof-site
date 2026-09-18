@@ -1,15 +1,28 @@
 "use client";
 
-import Link from "next/link";
+import { useState } from "react";
+import EventSchedule from "./eventschedule-card";
+import { Modal } from "./modal";
 
 export function NextEventLink() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Link
-      href="#"
-      onClick={() => alert("Join us for our next event!")}
-      className="text-blue-500 underline cursor-pointer"
-    >
-      Join our next event
-    </Link>
+    <>
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        title="View our Event Schedule"
+        className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"
+      >
+        View our Event Schedule
+      </button>
+
+      {isOpen && (
+        <Modal onClose={() => setIsOpen(false)}>
+          <EventSchedule />
+        </Modal>
+      )}
+    </>
   );
 }

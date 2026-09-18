@@ -1,65 +1,22 @@
 {
-  "monday": {
-    "event1": {
-      "name": "Test Event 1",
-      "timeuk": "20:00"
-    },
-
-    "event2": {
-      "name": "Test Event 2",
-      "timeuk": "21:00"
-    }
-  },
-
-  "tuesday": {
-    "event1": {
-      "name": "Test Event 3",
-      "timeuk": "20:00"
-    }
-  },
-
   "wednesday": {
     "event1": {
-      "name": "Test Event 4",
-      "timeuk": "20:00"
-    }
-  },
-
-  "thursday": {
-    "event1": {
-      "name": "Test Event 5",
-      "timeuk": "20:00"
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
     }
   },
 
   "friday": {
     "event1": {
-      "name": "Test Event 6",
-      "timeuk": "20:00"
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
     }
   },
 
   "saturday": {
     "event1": {
-      "name": "Test Event 7",
-      "timeuk": "20:00"
-    }
-  },
-
-  "sunday": {
-    "event1": {
-      "name": "Test Event 8",
-      "timeuk": "19:00"
-    },
-
-    "event2": {
-      "name": "Test Event 9",
-      "timeuk": "20:00"
-    },
-
-    "event3": {
-      "name": "Test Event 10",
-      "timeuk": "21:00"
+      "name": "AUS8 Public Linebattle",
+      "timeuk": "11:00"
     }
   }
 }
