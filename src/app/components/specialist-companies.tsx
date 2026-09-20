@@ -12,6 +12,20 @@ export function SpecialistCards(): import("react").JSX.Element {
     <>
       {/* Specials Block */}
       <div className="container mx-auto">
+        <div className="left-10">
+          {/*
+            This heading introduces the specialist companies of the 44th regiment.
+          */}
+          <h1 className="mb-6 text-3xl font-bold font-noto">
+            The 44th Special Companies
+          </h1>
+          <p className="mb-6 text-1xl">
+            As stated above, joining a special company in the 44th will give you
+            more ways to experience Holdfast. We offer 3 specials and 3
+            auxiliary companies. More information about our specials and
+            auxiliaries below.
+          </p>
+        </div>
         {/* Skirmishers */}
         <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_skirms_photo.jpg)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
           <div className="flex justify-center flex-1 relative z-10">
@@ -97,18 +111,16 @@ export function SpecialistCards(): import("react").JSX.Element {
               The 44th Artillery Company
             </h1>
             <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
-              The 44th Artillery was a proud formation forged in the turmoil of
-              the Napoleonic Wars, where discipline, courage, and mastery of the
-              gun determined the fate of the battlefield. Its artillerymen stood
-              beside their cannon under the thunder of enemy fire, loading and
-              firing with speed and precision while supporting the infantry and
-              cavalry around them. Through smoke, shot, and confusion, the men
-              of the 44th were expected to hold their ground and serve their
-              guns without hesitation. Their strength lay not only in the
-              destructive power of their artillery, but in the courage,
-              brotherhood, and unwavering discipline of the soldiers who served
-              it. <br />
-              <span className="bold italic">- 44th | JoshA</span>
+              The 44th Artillery Company is a formidable force on the
+              battlefield, known for its precision, accuracy, and unwavering
+              commitment to excellence in the regiment, making it a cornerstone
+              of the 44th's excellence. They are skilled and well practiced
+              cannoneers who are a laugh and also highly effective in combat.
+              While the 44th is known for getting blown up in linebattles by
+              enemy artillery, the Artillery Company knows how to give it back
+              to the enemy.
+              <br />
+              <span className="bold italic">- 44th | Henderson</span>
             </p>
           </div>
         </div>
