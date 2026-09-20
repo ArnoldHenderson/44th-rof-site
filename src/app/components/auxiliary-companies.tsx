@@ -11,8 +11,6 @@ export function AuxiliaryCompanies(): import("react").JSX.Element {
           <h1 className="mb-6 text-3xl font-bold font-noto">
             Auxiliary Companies
           </h1>
-        </div>
-        <div>
           <p>
             The 44th auxiliary companies provide additional ways to play
             Holdfast with the regiment. Whether you are interested in
