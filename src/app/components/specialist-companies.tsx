@@ -14,14 +14,16 @@ export function SpecialistCards(): import("react").JSX.Element {
       <div className="container mx-auto">
         {/* Skirmishers */}
         <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_skirms_photo.jpg)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
-          <div className="flex justify-center flex-1 w-80 relative z-10">
-            <Image
-              src="/media/images/icons/specialist/spec_skirmishers.png"
-              alt="Skirmisher Company Logo"
-              width={316}
-              height={316}
-              className="drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.10)]"
-            />
+          <div className="flex justify-center flex-1 relative z-10">
+            <div className="relative w-80 h-80">
+              <Image
+                src="/media/images/icons/specialist/spec_skirmishers.png"
+                alt="Skirmisher Company Logo"
+                fill
+                sizes="320px"
+                className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.10)]"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-4 flex-1 relative z-10">
             <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
@@ -43,14 +45,16 @@ export function SpecialistCards(): import("react").JSX.Element {
 
         {/* Cavalry */}
         <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_cav_photo.jpg)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
-          <div className="flex justify-center flex-1 w-80 relative z-10">
-            <Image
-              src="/media/images/icons/specialist/spec_cavalry.png"
-              alt="Cavalry Company Logo"
-              width={316}
-              height={316}
-              className="drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
-            />
+          <div className="flex justify-center flex-1 relative z-10">
+            <div className="relative w-80 h-80">
+              <Image
+                src="/media/images/icons/specialist/spec_cavalry.png"
+                alt="Cavalry Company Logo"
+                fill
+                sizes="320px"
+                className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-4 flex-1 relative z-10">
             <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
@@ -77,14 +81,16 @@ export function SpecialistCards(): import("react").JSX.Element {
 
         {/* Artillery */}
         <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_arty_photo.jpg)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
-          <div className="flex justify-center flex-1 w-80 relative z-10">
-            <Image
-              src="/media/images/icons/specialist/spec_artillery.png"
-              alt="Artillery Company Logo"
-              width={316}
-              height={316}
-              className="drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
-            />
+          <div className="flex justify-center flex-1 relative z-10">
+            <div className="relative w-80 h-80">
+              <Image
+                src="/media/images/icons/specialist/spec_artillery.png"
+                alt="Artillery Company Logo"
+                fill
+                sizes="320px"
+                className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-4 flex-1 relative z-10">
             <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">

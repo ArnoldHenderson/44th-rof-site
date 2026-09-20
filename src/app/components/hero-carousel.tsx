@@ -44,6 +44,7 @@ export function HeroCarousel(): import("react").JSX.Element {
           sizes="100vw"
           className={`object-cover transition-opacity duration-1000 ${index === activePhoto ? "opacity-100" : "opacity-0"}`}
           priority={index === 0}
+          loading="eager"
           aria-hidden={index !== activePhoto}
         />
       ))}
@@ -61,10 +62,10 @@ export function HeroCarousel(): import("react").JSX.Element {
         </h1>
 
         <h2 className="mb-6 text-xl font-bold font-noto">
-          We are a group of lads who like to play the game casually, we are
-          centred around fun when it comes to the game such as chaotic line
-          formations which usually end up with us getting shot by artillery, but
-          it is always a laugh.
+          We are a group of lads and lasses who like to play the game casually,
+          we are centred around fun when it comes to the game such as chaotic
+          line formations which usually end up with us getting shot by
+          artillery, but it is always a laugh.
           <br />
           <br />
           With loads of ranks to climb and a great community to be a part of, we
