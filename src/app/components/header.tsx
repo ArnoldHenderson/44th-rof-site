@@ -53,7 +53,7 @@ export function Header(): import("react").JSX.Element {
           >
             Join our Ranks!
             <Image
-              src="/media/images/icons/icon-discord.svg"
+              src="/media/images/icons/generic/icon-discord.svg"
               alt="Discord Icon"
               className="inline-block ml-1 h-4 w-4"
               width={16}
@@ -70,7 +70,7 @@ export function Header(): import("react").JSX.Element {
           >
             Donate
             <Image
-              src="/media/images/icons/icon-kofi.svg"
+              src="/media/images/icons/generic/icon-kofi.svg"
               alt="Ko-fi Icon"
               className="inline-block ml-1 h-4 w-4"
               width={16}

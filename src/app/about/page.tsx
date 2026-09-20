@@ -11,9 +11,11 @@ export default function About() {
     <>
       <Header />
 
+      {/* Main Content Section */}
       <main className="site-main grow p-4 font-noto">
         <div className="container mx-auto">
           <div className="mb-6 left-10">
+            {/* About Section */}
             <h1 className="mb-6 text-3xl font-bold font-noto">
               About the 44th
             </h1>
@@ -64,6 +66,7 @@ export default function About() {
 
         <hr className="my-8 border-gray-300" />
 
+        {/* Regiment Events Section */}
         <div className="container mx-auto">
           <div className="mb-6 left-10">
             <h1 className="mb-6 text-3xl font-bold font-noto">
@@ -106,6 +109,7 @@ export default function About() {
         <hr className="mb-8 border-gray-300" />
         <br />
 
+        {/* Information Cards Section */}
         <div className="container mx-auto mt-8">
           <InfoCards />
         </div>

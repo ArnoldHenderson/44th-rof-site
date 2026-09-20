@@ -19,11 +19,12 @@ export function AuxiliaryCompanies(): import("react").JSX.Element {
             back!
           </p>
         </div>
+
         {/* 
           Auxiliary Companies Block 
         */}
         {/* 44th Royal Navy / 44th Rum Rats */}
-        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-gray-900 border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:pointer-events-none overflow-visible">
+        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_medic_photo.png)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
           <div className="flex justify-center flex-1 relative z-10">
             <div className="relative w-80 h-80">
               <Image
@@ -40,18 +41,20 @@ export function AuxiliaryCompanies(): import("react").JSX.Element {
               The 44th Royal Navy / 44th Rum Rats
             </h1>
             <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
-              The 44th Royal Navy and the 44th Rum Rats provide unique
-              experiences for those looking to engage in naval battles or enjoy
-              a more relaxed, social aspect of the regiment. The Royal Navy
-              focuses on competitive naval engagements, while the Rum Rats offer
-              camaraderie and support for all members. (Replace This with more
-              detailed information about the auxiliary) <br />
-              <span className="bold italic">- 44th | John Doe</span>
+              Royal Navy Fight with us on the high seas, as a sailor,
+              midshipman, marine, carpenter and a captain on a variety of ships
+              and vessels, with huge cannon fights and epic boarding actions.
+              The 44th Royal Navy has multiple naval events every week with a
+              progression system and medals to earn. We are also involved in the
+              Navy Sports League in which we compete under the Rum Rats team
+              with other players in the Holdfast community. <br />
+              <span className="bold italic">- 44th | Rockwell</span>
             </p>
           </div>
         </div>
+
         {/* 44th Royal Guard */}
-        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-gray-900 border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:pointer-events-none overflow-visible">
+        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_medic_photo.png)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
           <div className="flex justify-center flex-1 relative z-10">
             <div className="relative w-80 h-80">
               <Image
@@ -81,8 +84,9 @@ export function AuxiliaryCompanies(): import("react").JSX.Element {
             </p>
           </div>
         </div>
+
         {/* 44th Royal Medical Corps */}
-        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-gray-900 border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:pointer-events-none overflow-visible">
+        <div className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center bg-[url(/media/images/regiment_photos/44th_medic_photo.png)] border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible">
           <div className="flex justify-center flex-1 relative z-10">
             <div className="relative w-80 h-80">
               <Image

@@ -1,6 +1,11 @@
 import { MetadataRoute } from "next";
 import sitemap from "./sitemap";
 
+{
+  /* 
+  Robots configuration for search engines and blocking malicious/unwanted bots
+*/
+}
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
