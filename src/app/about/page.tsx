@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { CompanyLister } from "@/app/components/company-lister";
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
-import { InfoCards } from "@/app/components/info-cards";
-import { EventScheduleLink } from "@/app/components/event-schedule-link";
+import { CompanyLister } from "@/app/components/company-lister";
+import { InfoCardsCreator } from "@/app/components/info-cards-creator";
+import { RegimentEvents } from "@/app/components/regiment-events";
 
+// JSON Data Imports
 import specialistCompanies from "@/data/Companies/specialist-companies.json";
 import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
+import infoCards from "@/data/InfoCards/info-cards.json";
 
 export default function About() {
   return (
@@ -71,32 +73,8 @@ export default function About() {
         <hr className="my-8 border-gray-300" />
 
         {/* Regiment Events Section */}
-        <div className="container mx-auto">
-          <div className="mb-6 left-10">
-            <h1 className="mb-6 text-3xl font-bold font-noto">
-              Our Regiment Events
-            </h1>
-            <div className="mb-6 text-1xl">
-              <p>
-                Our regiment attends events that usually consist of an hour of
-                fun and casual gameplay. We have events every day in our main EU
-                side as well as regular events for our NA side and a select few
-                events for OCE. These events will be announced a few hours
-                before the event starts.
-              </p>
-              <p>
-                We also do regular training sessions throughout the week on our
-                EU side to help our members improve their skills and teamwork.
-                The types of training will vary, they could be drills, line
-                leader training, melee practice, or fun.
-              </p>
-              <br />
+        <RegimentEvents />
 
-              {/* Opens the Next event popup on this page */}
-              <EventScheduleLink />
-            </div>
-          </div>
-        </div>
         <hr className="my-8 border-gray-300" />
 
         {/* Special Companies Section */}
@@ -120,7 +98,7 @@ export default function About() {
 
         {/* Information Cards Section */}
         <div className="container mx-auto mt-8">
-          <InfoCards />
+          <InfoCardsCreator infoCards={infoCards} />
         </div>
       </main>
 
