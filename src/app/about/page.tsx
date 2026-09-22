@@ -1,10 +1,14 @@
+"use client";
+import { CompanyLister } from "@/app/components/company-lister";
 import Image from "next/image";
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
-import { SpecialistCards } from "@/app/components/specialist-companies";
 import { InfoCards } from "@/app/components/info-cards";
 import { NextEventLink } from "@/app/components/next-event-link";
 import { AuxiliaryCompanies } from "../components/auxiliary-companies";
+
+import specialistCompanies from "@/data/Companies/specialist-companies.json";
+import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
 
 export default function About() {
   return (
@@ -55,7 +59,7 @@ export default function About() {
                 Join us today to help keep the 44th on Top!
               </p>
               <Image
-                src="media/images/branding/logo.svg"
+                src="/media/images/branding/logo.svg"
                 alt="44th Regiment of Foot Logo"
                 width={72}
                 height={72}
@@ -93,17 +97,49 @@ export default function About() {
             </div>
           </div>
         </div>
-
         <hr className="my-8 border-gray-300" />
 
         {/* Special Companies Section */}
-        <SpecialistCards />
+        <div className="container mx-auto">
+          <div className="left-10">
+            {/*
+            This heading introduces the specialist companies of the 44th regiment.
+          */}
+            <h1 className="mb-6 text-3xl font-bold font-noto">
+              The 44th Special Companies
+            </h1>
+            <p className="mb-6 text-1xl">
+              As stated above, joining a special company in the 44th will give
+              you more ways to experience Holdfast. We offer 3 specials and 3
+              auxiliary companies. More information about our specials and
+              auxiliaries below.
+            </p>
+          </div>
+        </div>
+        <CompanyLister companies={specialistCompanies} />
 
         <br />
         <hr className="mb-8 border-gray-300" />
 
         {/* Auxiliary Companies Section */}
-        <AuxiliaryCompanies />
+        <div className="container mx-auto">
+          <div className="mb-6 left-10">
+            {/*
+            This heading introduces the auxiliary companies of the 44th regiment.
+          */}
+            <h1 className="mb-6 text-3xl font-bold font-noto">
+              Auxiliary Companies
+            </h1>
+            <p>
+              The 44th auxiliary companies provide additional ways to play
+              Holdfast with the regiment. Whether you are interested in
+              Competitive Naval Battles, Competitive Melee Group fights and
+              training, or a field Medic. The auxiliary companies have got your
+              back!
+            </p>
+          </div>
+        </div>
+        <CompanyLister companies={auxiliaryCompanies} />
 
         <br />
         <hr className="mb-8 border-gray-300" />
