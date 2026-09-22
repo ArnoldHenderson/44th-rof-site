@@ -1,19 +1,35 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+function subscribeToTheme(callback: () => void): () => void {
+  const observer = new MutationObserver(callback);
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
+
+  return () => observer.disconnect();
+}
+
+function getThemeSnapshot(): boolean {
+  return document.documentElement.classList.contains("dark");
+}
+
+function getServerThemeSnapshot(): boolean {
+  return false;
+}
 
 export function ThemeToggle(): import("react").JSX.Element {
-  const [isDark, setIsDark] = useState(false);
-
-  // Sync initial state with the class set by the anti-flash script in layout.tsx
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
-  }, []);
+  const isDark = useSyncExternalStore(
+    subscribeToTheme,
+    getThemeSnapshot,
+    getServerThemeSnapshot,
+  );
 
   function toggleTheme() {
     const next = !isDark;
-    setIsDark(next);
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
   }

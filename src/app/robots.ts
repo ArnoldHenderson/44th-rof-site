@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import sitemap from "./sitemap";
 
 {
   /* 

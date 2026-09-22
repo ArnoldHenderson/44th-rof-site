@@ -1,26 +1,32 @@
-[
-  {
-    "key": "skirm",
-    "name": "The 44th Skirmisher Company",
-    "bgImage": "/media/images/regiment_photos/44th_skirms_photo.jpg",
-    "logo": "/media/images/icons/specialist/spec_skirmishers.png",
-    "description": "Swift and deadly, the Light Infantry and Riflemen are the first on the battlefield. They harass the main force, hit fast and manoeuver, whittling down the numbers ready for the 44th Line to decimate the remaining enemy. The 44th Skirmisher Company offers tailored skirmisher events, alongside Skirmisher gameplay in select linebattles. With a bounty board, trophy hall and a weekly Skirmisher leaderboard, there's plenty here to get your teeth into.",
-    "personQuoted": "44th | DaddyEdge"
+{
+  "companySectionInfo": {
+    "sectionHeader": "The 44th Special Companies",
+    "sectionDescription": "As stated above, joining a special company in the 44th will give you more ways to experience Holdfast. We offer 3 specials and 3 auxiliary companies. More information about our specials and auxiliaries below."
   },
-  {
-    "key": "cav",
-    "name": "The 44th Cavalry Company",
-    "bgImage": "/media/images/regiment_photos/44th_cav_photo.jpg",
-    "logo": "/media/images/icons/specialist/spec_cavalry.png",
-    "description": "The 44th Regiment of Foot Cavalry is, without question, the finest special in the regiment—a perfect combination of aggression, discipline, skill and absolute battlefield dominance. Under the almighty reign of Skeps, the commander and creator of the 44th Cavalry, the unit cemented its place among the elite by taking down the 42nd Cav, a Top 3 Cavalry team, during the regiments FIRST ever Cav League, a result that speaks for itself. The 44th don't need excuses, gimmicks or endless backline support; they turn up, mount up and deliver hell.",
-    "personQuoted": "44th | Skeps"
-  },
-  {
-    "key": "arty",
-    "name": "The 44th Artillery Company",
-    "bgImage": "/media/images/regiment_photos/44th_arty_photo.jpg",
-    "logo": "/media/images/icons/specialist/spec_artillery.png",
-    "description": "The 44th Artillery Company is a formidable force on the battlefield, known for its precision, accuracy, and unwavering commitment to excellence in the regiment, making it a cornerstone of the 44th's excellence. They are skilled and well practiced cannoneers who are a laugh and also highly effective in combat. While the 44th is known for getting blown up in linebattles by enemy artillery, the Artillery Company knows how to give it back to the enemy.",
-    "personQuoted": "44th | Henderson"
-  }
-]
+  "companies": [
+    {
+      "key": "skirm",
+      "name": "The 44th Skirmisher Company",
+      "bgImage": "/media/images/regiment_photos/44th_skirms_photo.jpg",
+      "logo": "/media/images/icons/specialist/spec_skirmishers.png",
+      "description": "Swift and deadly, the Light Infantry and Riflemen are the first on the battlefield. They harass the main force, hit fast and manoeuver, whittling down the numbers ready for the 44th Line to decimate the remaining enemy. The 44th Skirmisher Company offers tailored skirmisher events, alongside Skirmisher gameplay in select linebattles. With a bounty board, trophy hall and a weekly Skirmisher leaderboard, there's plenty here to get your teeth into.",
+      "personQuoted": "44th | DaddyEdge"
+    },
+    {
+      "key": "cav",
+      "name": "The 44th Cavalry Company",
+      "bgImage": "/media/images/regiment_photos/44th_cav_photo.jpg",
+      "logo": "/media/images/icons/specialist/spec_cavalry.png",
+      "description": "The 44th Regiment of Foot Cavalry is, without question, the finest special in the regiment—a perfect combination of aggression, discipline, skill and absolute battlefield dominance. Under the almighty reign of Skeps, the commander and creator of the 44th Cavalry, the unit cemented its place among the elite by taking down the 42nd Cav, a Top 3 Cavalry team, during the regiments FIRST ever Cav League, a result that speaks for itself. The 44th don't need excuses, gimmicks or endless backline support; they turn up, mount up and deliver hell.",
+      "personQuoted": "44th | Skeps"
+    },
+    {
+      "key": "arty",
+      "name": "The 44th Artillery Company",
+      "bgImage": "/media/images/regiment_photos/44th_arty_photo.jpg",
+      "logo": "/media/images/icons/specialist/spec_artillery.png",
+      "description": "The 44th Artillery Company is a formidable force on the battlefield, known for its precision, accuracy, and unwavering commitment to excellence in the regiment, making it a cornerstone of the 44th's excellence. They are skilled and well practiced cannoneers who are a laugh and also highly effective in combat. While the 44th is known for getting blown up in linebattles by enemy artillery, the Artillery Company knows how to give it back to the enemy.",
+      "personQuoted": "44th | Henderson"
+    }
+  ]
+}

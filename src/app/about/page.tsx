@@ -1,10 +1,11 @@
 "use client";
-import { CompanyLister } from "@/app/components/company-lister";
+
 import Image from "next/image";
+import { CompanyLister } from "@/app/components/company-lister";
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
 import { InfoCards } from "@/app/components/info-cards";
-import { NextEventLink } from "@/app/components/next-event-link";
+import { EventScheduleLink } from "@/app/components/event-schedule-link";
 
 import specialistCompanies from "@/data/Companies/specialist-companies.json";
 import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
@@ -25,8 +26,8 @@ export default function About() {
             <div className="mb-6 text-1xl">
               <p>
                 The 44th has always been a chaotic and casual regiment for the
-                game "Holdfast: Nations at War" we have always put fun first
-                above all.
+                game &quot;Holdfast: Nations at War&quot; we have always put fun
+                first above all.
               </p>
               <p>
                 Started by General Ted in 2022 the regiment has grown to be the
@@ -43,7 +44,7 @@ export default function About() {
                 After a while we saw the NA side of the regiment spike up in
                 activity after a few members the main one being TheRandomKC who
                 pioneered through the ranks. KC would later be put in charge of
-                the regiment following Gen. Ted's departure after he joined
+                the regiment following Gen. Ted&apos;s departure after he joined
                 Anvil Game Studios as a Community Manager.
               </p>
               <p>
@@ -92,53 +93,26 @@ export default function About() {
               <br />
 
               {/* Opens the Next event popup on this page */}
-              <NextEventLink />
+              <EventScheduleLink />
             </div>
           </div>
         </div>
         <hr className="my-8 border-gray-300" />
 
         {/* Special Companies Section */}
-        <div className="container mx-auto">
-          <div className="left-10">
-            {/*
-            This heading introduces the specialist companies of the 44th regiment.
-          */}
-            <h1 className="mb-6 text-3xl font-bold font-noto">
-              The 44th Special Companies
-            </h1>
-            <p className="mb-6 text-1xl">
-              As stated above, joining a special company in the 44th will give
-              you more ways to experience Holdfast. We offer 3 specials and 3
-              auxiliary companies. More information about our specials and
-              auxiliaries below.
-            </p>
-          </div>
-        </div>
-        <CompanyLister companies={specialistCompanies} />
+        <CompanyLister
+          companies={specialistCompanies.companies}
+          companySectionInfo={specialistCompanies.companySectionInfo}
+        />
 
         <br />
         <hr className="mb-8 border-gray-300" />
 
         {/* Auxiliary Companies Section */}
-        <div className="container mx-auto">
-          <div className="mb-6 left-10">
-            {/*
-            This heading introduces the auxiliary companies of the 44th regiment.
-          */}
-            <h1 className="mb-6 text-3xl font-bold font-noto">
-              Auxiliary Companies
-            </h1>
-            <p>
-              The 44th auxiliary companies provide additional ways to play
-              Holdfast with the regiment. Whether you are interested in
-              Competitive Naval Battles, Competitive Melee Group fights and
-              training, or a field Medic. The auxiliary companies have got your
-              back!
-            </p>
-          </div>
-        </div>
-        <CompanyLister companies={auxiliaryCompanies} />
+        <CompanyLister
+          companies={auxiliaryCompanies.companies}
+          companySectionInfo={auxiliaryCompanies.companySectionInfo}
+        />
 
         <br />
         <hr className="mb-8 border-gray-300" />

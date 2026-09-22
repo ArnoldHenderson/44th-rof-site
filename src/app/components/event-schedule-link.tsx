@@ -4,7 +4,7 @@ import { useState } from "react";
 import EventSchedule from "./eventschedule-card";
 import { Modal } from "./modal";
 
-export function NextEventLink() {
+export function EventScheduleLink() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
