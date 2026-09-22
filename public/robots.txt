@@ -1,8 +1,0 @@
-
-User-agent: *
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-Disallow: /components/
-
-Sitemap: https://www.w3schools.com/sitemap.xml # Replace this

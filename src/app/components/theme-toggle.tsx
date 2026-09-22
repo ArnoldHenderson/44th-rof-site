@@ -28,16 +28,16 @@ export function ThemeToggle(): import("react").JSX.Element {
     >
       {isDark ? (
         <Image
-          src="/media/images/icons/icon-moon.svg"
-          alt="Sun Icon"
+          src="/media/images/icons/generic/icon-moon.svg"
+          alt="Moon Icon"
           className="h-4 w-4 brightness-0 invert"
           width={16}
           height={16}
         />
       ) : (
         <Image
-          src="/media/images/icons/icon-sun.svg"
-          alt="Moon Icon"
+          src="/media/images/icons/generic/icon-sun.svg"
+          alt="Sun Icon"
           className="h-4 w-4 brightness-0"
           width={16}
           height={16}

@@ -1,11 +1,4 @@
 {
-  "sunday": {
-    "event1": {
-      "name": "63e Private Linebattle",
-      "timeuk": "01:00"
-    }
-  },
-
   "monday": {
     "event1": {
       "name": "Regiment Training",
@@ -59,6 +52,13 @@
 
     "event2": {
       "name": "7.Fuß Private Linebattle",
+      "timeuk": "01:00"
+    }
+  },
+
+  "sunday": {
+    "event1": {
+      "name": "63e Private Linebattle",
       "timeuk": "01:00"
     }
   }

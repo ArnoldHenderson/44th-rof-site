@@ -44,6 +44,7 @@ export function HeroCarousel(): import("react").JSX.Element {
           sizes="100vw"
           className={`object-cover transition-opacity duration-1000 ${index === activePhoto ? "opacity-100" : "opacity-0"}`}
           priority={index === 0}
+          loading="eager"
           aria-hidden={index !== activePhoto}
         />
       ))}
@@ -60,29 +61,31 @@ export function HeroCarousel(): import("react").JSX.Element {
           </span>
         </h1>
 
-        <h2 className="mb-6 text-xl font-bold font-noto">
-          We are a group of lads who like to play the game casually, we are
-          centred around fun when it comes to the game such as chaotic line
-          formations which usually end up with us getting shot by artillery, but
-          it is always a laugh.
-          <br />
-          <br />
-          With loads of ranks to climb and a great community to be a part of, we
-          are always looking for more{" "}
-          <span className="line-through">cannon fodder</span> members to join
-          our ranks!
-          <br />
-          <br />
-          If you are interested and want to see more, then go to our about page
-          here!
-          <br />
-          <br />
-          We have{" "}
-          <span className="italic underline text-yellow-600">
-            EU, NA and OCE
-          </span>{" "}
-          events for you to dabble in!
-        </h2>
+        <div className="mb-6 text-xl font-bold font-noto">
+          <h2>
+            We are a group of lads and lasses who like to play the game
+            casually, we are centred around fun when it comes to the game such
+            as chaotic line formations which usually end up with us getting shot
+            by artillery, but it is always a laugh.
+          </h2>
+          <h2>
+            With loads of ranks to climb and a great community to be a part of,
+            we are always looking for more{" "}
+            <span className="line-through">cannon fodder</span> members to join
+            our ranks!
+          </h2>
+          <h2>
+            If you are interested and want to see more, then go to our about
+            page here!
+          </h2>
+          <h2>
+            We have{" "}
+            <span className="italic underline text-yellow-600">
+              EU, NA and OCE
+            </span>{" "}
+            events for you to dabble in!
+          </h2>
+        </div>
 
         {/* About us button */}
         <Link

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* Tailwind CSS v4 directives; ignored by generic CSS linters. */
+/* stylelint-disable at-rule-no-unknown */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -24,6 +26,7 @@
   --font-roboto: var(--font-roboto);
   --font-noto: var(--font-noto-sans);
 }
+/* stylelint-enable at-rule-no-unknown */
 
 .site-header,
 .site-footer {
@@ -35,4 +38,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-ubuntu), sans-serif;
+}
+
+.site-main p + p {
+  margin-top: 1rem;
+}
+
+.site-main h2 + h2 {
+  margin-top: 1rem;
 }

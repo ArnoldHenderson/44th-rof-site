@@ -20,7 +20,6 @@ const ubuntu = Ubuntu({
 
 const roboto = Roboto({
   variable: "--font-roboto",
-  weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
 

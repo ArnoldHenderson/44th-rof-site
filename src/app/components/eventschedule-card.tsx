@@ -2,6 +2,9 @@ import EventScheduleEU from "@/data/EventSchedules/Schedule-EU.json";
 import EventScheduleNA from "@/data/EventSchedules/Schedule-NA.json";
 import EventScheduleOCE from "@/data/EventSchedules/Schedule-OCE.json";
 
+{
+  /* Type definitions for the event schedule */
+}
 type Event = {
   name: string;
   timeuk: string;
@@ -15,6 +18,12 @@ type Schedule = {
   [day: string]: DaySchedule;
 };
 
+{
+  /* Functions to create table elements for each region's event schedule */
+}
+{
+  /* EU Schedule Table Elements */
+}
 function CreateEUScheduleTableElements() {
   const schedule = EventScheduleEU as Schedule;
 
@@ -29,6 +38,9 @@ function CreateEUScheduleTableElements() {
   );
 }
 
+{
+  /* NA Schedule Table Elements */
+}
 function CreateNAScheduleTableElements() {
   const schedule = EventScheduleNA as Schedule;
 
@@ -43,6 +55,9 @@ function CreateNAScheduleTableElements() {
   );
 }
 
+{
+  /* OCE Schedule Table Elements */
+}
 function CreateOCEScheduleTableElements() {
   const schedule = EventScheduleOCE as Schedule;
 
