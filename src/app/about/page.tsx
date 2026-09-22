@@ -5,7 +5,6 @@ import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
 import { InfoCards } from "@/app/components/info-cards";
 import { NextEventLink } from "@/app/components/next-event-link";
-import { AuxiliaryCompanies } from "../components/auxiliary-companies";
 
 import specialistCompanies from "@/data/Companies/specialist-companies.json";
 import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
