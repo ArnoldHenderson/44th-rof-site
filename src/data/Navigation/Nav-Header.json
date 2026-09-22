@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Home",
+    "href": "/",
+    "target": "_self",
+    "title": "Go to Home Page",
+    "icon": ""
+  },
+  {
+    "name": "About",
+    "href": "/about",
+    "target": "_self",
+    "title": "Learn more about us",
+    "icon": ""
+  },
+  {
+    "name": "Join our Ranks!",
+    "href": "https://discord.gg/44th",
+    "target": "_blank",
+    "title": "Join our Discord",
+    "icon": "/media/images/icons/generic/icon-discord.svg"
+  },
+  {
+    "name": "Support us",
+    "href": "https://ko-fi.com/44throf",
+    "target": "_blank",
+    "title": "Support us on Ko-fi",
+    "icon": "/media/images/icons/generic/icon-kofi.svg"
+  }
+]
