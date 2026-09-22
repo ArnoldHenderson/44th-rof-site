@@ -58,7 +58,7 @@ export function CompanyLister({
 
             {/* Company Info Section */}
             {/* Company Name */}
-            <div className="flex flex-col gap-4 flex-1 relative z-10">
+            <div className="flex flex-col gap-4 flex-1 relative z-10 p-2">
               <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
                 {company.name}
               </h1>
