@@ -1,7 +1,10 @@
-import { Header } from "./components/header";
-import { Footer } from "./components/footer";
+import { Header } from "@/app/components/header";
+import { Footer } from "@/app/components/footer";
 import { HeroCarousel } from "@/app/components/hero-carousel";
-import { InfoCards } from "@/app/components/info-cards";
+import { InfoCardsCreator } from "@/app/components/info-cards-creator";
+
+// JSON Data for info cards
+import infoCardsData from "@/data/InfoCards/info-cards.json";
 
 {
   /* Home page, add more elements when needed */
@@ -25,7 +28,7 @@ export default function Home() {
 
         {/* Info Cards Section */}
         <div className="container mx-auto mt-8">
-          <InfoCards />
+          <InfoCardsCreator infoCards={infoCardsData} />
         </div>
 
         <br />

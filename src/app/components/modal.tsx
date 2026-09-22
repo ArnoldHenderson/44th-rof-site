@@ -8,6 +8,7 @@ type ModalProps = {
 };
 
 export function Modal({ onClose, children }: ModalProps) {
+  // Close the modal when the Escape key is pressed
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
