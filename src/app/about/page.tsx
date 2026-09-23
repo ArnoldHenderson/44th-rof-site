@@ -18,7 +18,7 @@ export default function About() {
       <Header />
 
       {/* Main Content Section */}
-      <main className="site-main grow p-4 font-noto">
+      <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <div className="mb-6 left-10">
             {/* About Section */}

@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
 
       {/* Main Content Section*/}
-      <main className="site-main grow p-4 font-noto">
+      <main className="site-main blurred-glow-bg grow p-4 font-noto">
         {/* Hero Carousel Section */}
         <div className="container mx-auto">
           <HeroCarousel />

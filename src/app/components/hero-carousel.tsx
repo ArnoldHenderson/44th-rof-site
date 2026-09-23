@@ -33,7 +33,7 @@ export function HeroCarousel(): import("react").JSX.Element {
   }, []);
 
   return (
-    <div className="relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
+    <div className="home-hero relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
       {/* Function updates the image */}
       {photos.map((photo, index) => (
         <Image
