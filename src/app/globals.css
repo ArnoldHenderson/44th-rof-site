@@ -6,7 +6,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --surface: #e5e7eb;
+  --surface: #d1d5db;
   --surface-foreground: #111827;
 }
 
@@ -46,4 +46,93 @@ body {
 
 .site-main h2 + h2 {
   margin-top: 1rem;
+}
+
+/* Blurred yellow circles floating over the page background (black/white via --background) */
+.blurred-glow-bg {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.blurred-glow-bg::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 70% 75%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 50% 42%,
+      rgba(250, 204, 21, 0.23),
+      transparent 6%
+    ),
+    radial-gradient(
+      circle at 38% 64%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(250, 204, 21, 0.23),
+      transparent 10%
+    );
+  filter: blur(70px);
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 70% 75%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 50% 42%,
+      rgba(250, 204, 21, 0.23),
+      transparent 6%
+    ),
+    radial-gradient(circle at 38% 64%, rgba(250, 204, 21, 0.2), transparent 5%),
+    radial-gradient(circle at 10% 85%, rgba(250, 204, 21, 0.23), transparent 5%);
+  filter: blur(55px);
 }

@@ -29,7 +29,7 @@ export function Header(): import("react").JSX.Element {
             alt="44th Regiment of Foot Logo"
             width={80}
             height={80}
-            className="mr-2 w-16 h-16 md:w-20 md:h-20"
+            className="mr-2 w-16 h-16 md:w-20 md:h-20 drop-shadow-md"
           />
           <Link
             href="/"
@@ -79,6 +79,7 @@ export function Header(): import("react").JSX.Element {
               )}
             </Link>
           ))}
+          <ThemeToggle />
         </nav>
       </div>
     </header>
