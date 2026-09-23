@@ -132,7 +132,15 @@ body {
       rgba(250, 204, 21, 0.23),
       transparent 6%
     ),
-    radial-gradient(circle at 38% 64%, rgba(250, 204, 21, 0.2), transparent 5%),
-    radial-gradient(circle at 10% 85%, rgba(250, 204, 21, 0.23), transparent 5%);
+    radial-gradient(
+      circle at 38% 64%,
+      rgba(250, 204, 21, 0.23),
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(250, 204, 21, 0.23),
+      transparent 10%
+    );
   filter: blur(55px);
 }

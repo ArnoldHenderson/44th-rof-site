@@ -100,7 +100,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <head>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>You need to enable JavaScript to run this website.</noscript>
         {/* Sets the theme class before paint to avoid a light/dark flash */}
         <Script
           id="theme-initializer"

@@ -44,7 +44,7 @@ export function CompanyLister({
             style={{ backgroundImage: `url(${company.bgImage})` }}
           >
             {/* Company Logo */}
-            <div className="flex justify-center flex-1 relative z-10">
+            <div className="hidden md:flex justify-center flex-1 relative z-10">
               <div className="relative w-80 h-80">
                 <Image
                   src={company.logo}
