@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import EventSchedule from "./eventschedule-card";
-import { Modal } from "./modal";
+import Modal from "./modal";
 
-export function RegimentEvents() {
+export default function RegimentEvents() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

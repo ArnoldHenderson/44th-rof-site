@@ -7,7 +7,7 @@ type ModalProps = {
   children: import("react").ReactNode;
 };
 
-export function Modal({ onClose, children }: ModalProps) {
+export default function Modal({ onClose, children }: ModalProps) {
   // Close the modal when the Escape key is pressed
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {

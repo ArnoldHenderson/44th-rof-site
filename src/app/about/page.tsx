@@ -1,11 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { Header } from "@/app/components/header";
-import { Footer } from "@/app/components/footer";
-import { CompanyLister } from "@/app/components/company-lister";
-import { InfoCardsCreator } from "@/app/components/info-cards-creator";
-import { RegimentEvents } from "@/app/components/regiment-events";
+import { Header, Footer } from "@/app/components/header-footer";
+import CompanyLister from "@/app/components/company-lister";
+import InfoCardsCreator from "@/app/components/info-cards-creator";
+import RegimentEvents from "@/app/components/regiment-events";
 
 // JSON Data Imports
 import specialistCompanies from "@/data/Companies/specialist-companies.json";

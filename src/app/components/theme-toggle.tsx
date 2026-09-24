@@ -21,7 +21,7 @@ function getServerThemeSnapshot(): boolean {
   return false;
 }
 
-export function ThemeToggle(): import("react").JSX.Element {
+export default function ThemeToggle(): import("react").JSX.Element {
   const isDark = useSyncExternalStore(
     subscribeToTheme,
     getThemeSnapshot,

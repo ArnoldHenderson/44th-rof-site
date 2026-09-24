@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ThemeToggle } from "./theme-toggle";
+import ThemeToggle from "./theme-toggle";
 
 // JSON Data for Navigation Header
 import NavHeader from "@/data/Navigation/Nav-Header.json";
@@ -16,6 +16,7 @@ type NavItem = {
   icon: string;
 };
 
+// Header Component
 export function Header(): import("react").JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -83,5 +84,25 @@ export function Header(): import("react").JSX.Element {
         </nav>
       </div>
     </header>
+  );
+}
+
+// Footer Component
+export function Footer(): import("react").JSX.Element {
+  return (
+    <>
+      {/* Site Footer, add more elements when needed */}
+      <footer className="site-footer mt-8 p-4">
+        <div className="container mx-auto flex items-center justify-between">
+          <div>
+            <p className="text-sm">
+              &copy; {new Date().getFullYear()} 44th Regiment of Foot. All
+              rights reserved.
+            </p>
+          </div>
+          <nav className="flex items-center gap-4"></nav>
+        </div>
+      </footer>
+    </>
   );
 }

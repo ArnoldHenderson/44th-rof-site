@@ -14,7 +14,7 @@ type InfoCard = {
   }[];
 };
 
-export function InfoCardsCreator({
+export default function InfoCardsCreator({
   infoCards,
 }: {
   infoCards: InfoCard[];

@@ -18,7 +18,7 @@ const photos = [
   "/media/images/regiment_photos/regphoto7.png",
 ];
 
-export function HeroCarousel(): import("react").JSX.Element {
+export default function HeroCarousel(): import("react").JSX.Element {
   {
     /* Code for the carousel, swaps the image every 5 seconds */
   }

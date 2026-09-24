@@ -16,7 +16,7 @@ type CompanyList = {
   bgImage: string;
 };
 
-export function CompanyLister({
+export default function CompanyLister({
   companies,
   companySectionInfo,
 }: {

@@ -1,7 +1,6 @@
-import { Header } from "@/app/components/header";
-import { Footer } from "@/app/components/footer";
-import { HeroCarousel } from "@/app/components/hero-carousel";
-import { InfoCardsCreator } from "@/app/components/info-cards-creator";
+import { Header, Footer } from "@/app/components/header-footer";
+import HeroCarousel from "@/app/components/hero-carousel";
+import InfoCardsCreator from "@/app/components/info-cards-creator";
 
 // JSON Data for info cards
 import infoCardsData from "@/data/InfoCards/info-cards.json";
