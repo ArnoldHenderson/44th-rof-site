@@ -2,14 +2,19 @@
 
 import { useState } from "react";
 import EventSchedule from "./eventschedule-card";
-import { Modal } from "./modal";
+import Modal from "./modal";
 
-export function RegimentEvents() {
+/**
+ * RegimentEvents component.
+ * @component RegimentEvents
+ * @description Renders the regiment events section with a button to view the event schedule in a modal.
+ * @returns {JSX.Element} The rendered regiment events component.
+ */
+
+export default function RegimentEvents() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
-      {/* Regiment Events Section */}
       <div className="container mx-auto">
         <div className="mb-6 left-10">
           <h1 className="mb-6 text-3xl font-bold font-noto">

@@ -2,6 +2,16 @@
 
 import Image from "next/image";
 
+/**
+ * Company List containing an individual company card for each company.
+ * Each company card displays the company's logo, name, description, and the person quoted with an image in the background.
+ * @component CompanyLister
+ * @description Renders a list of company cards with their respective information from a JSON file.
+ * @returns {JSX.Element} The rendered company list component.
+ * @param {CompanyList[]} companies - Array of company objects to display.
+ * @param {CompanySectionHeader} companySectionInfo - Information for the section header and description.
+ */
+
 type CompanySectionHeader = {
   sectionHeader: string;
   sectionDescription: string;
@@ -16,7 +26,7 @@ type CompanyList = {
   bgImage: string;
 };
 
-export function CompanyLister({
+export default function CompanyLister({
   companies,
   companySectionInfo,
 }: {
@@ -26,16 +36,10 @@ export function CompanyLister({
   return (
     <>
       <div className="container mx-auto">
-        {/* Section Header and Description */}
         <h1 className="text-3xl font-bold mb-6">
           {companySectionInfo.sectionHeader}
         </h1>
         <p className="mb-8">{companySectionInfo.sectionDescription}</p>
-
-        {/* 
-            Company List containing an individual company card for each company.
-            Each company card displays the company's logo, name, description, and the person quoted with an image in the background.
-        */}
 
         {companies.map((company) => (
           <div
@@ -43,7 +47,6 @@ export function CompanyLister({
             className="mb-6 flex items-center justify-center min-h-96 bg-cover bg-center border-2 border-gray-300 dark:border-gray-600 relative before:absolute before:inset-0 before:bg-linear-to-l before:from-black/30 before:to-transparent dark:before:from-black/80 before:pointer-events-none overflow-visible"
             style={{ backgroundImage: `url(${company.bgImage})` }}
           >
-            {/* Company Logo */}
             <div className="hidden md:flex justify-center flex-1 relative z-10">
               <div className="relative w-80 h-80">
                 <Image
@@ -56,8 +59,6 @@ export function CompanyLister({
               </div>
             </div>
 
-            {/* Company Info Section */}
-            {/* Company Name */}
             <div className="flex flex-col gap-4 flex-1 relative z-10 p-2">
               <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
                 {company.name}

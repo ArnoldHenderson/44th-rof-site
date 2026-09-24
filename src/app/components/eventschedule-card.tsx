@@ -1,10 +1,14 @@
-import EventScheduleEU from "@/data/EventSchedules/Schedule-EU.json";
-import EventScheduleNA from "@/data/EventSchedules/Schedule-NA.json";
-import EventScheduleOCE from "@/data/EventSchedules/Schedule-OCE.json";
+import EventScheduleEU from "@/data/EventSchedules/event-schedule-eu.json";
+import EventScheduleNA from "@/data/EventSchedules/event-schedule-na.json";
+import EventScheduleOCE from "@/data/EventSchedules/event-schedule-oce.json";
 
-{
-  /* Type definitions for the event schedule */
-}
+/**
+ * Generates and displays the event schedule tables for EU, NA, and OCE regions.
+ * @component EventSchedule
+ * @description Renders the event schedule for different regions using data from JSON files.
+ * @returns {JSX.Element} The rendered event schedule component.
+ */
+
 type Event = {
   name: string;
   timeuk: string;
@@ -18,12 +22,6 @@ type Schedule = {
   [day: string]: DaySchedule;
 };
 
-{
-  /* Functions to create table elements for each region's event schedule */
-}
-{
-  /* EU Schedule Table Elements */
-}
 function CreateEUScheduleTableElements() {
   const schedule = EventScheduleEU as Schedule;
 
@@ -38,9 +36,6 @@ function CreateEUScheduleTableElements() {
   );
 }
 
-{
-  /* NA Schedule Table Elements */
-}
 function CreateNAScheduleTableElements() {
   const schedule = EventScheduleNA as Schedule;
 
@@ -55,9 +50,6 @@ function CreateNAScheduleTableElements() {
   );
 }
 
-{
-  /* OCE Schedule Table Elements */
-}
 function CreateOCEScheduleTableElements() {
   const schedule = EventScheduleOCE as Schedule;
 
@@ -83,7 +75,7 @@ export default function EventSchedule(): import("react").JSX.Element {
           Events may be canceled or rescheduled. This schedule is subject to
           change.
         </h1>
-        {/* EU */}
+
         <h1 className="text-3xl underline bold font-ubuntu">
           EU Event Schedule
         </h1>
@@ -101,7 +93,6 @@ export default function EventSchedule(): import("react").JSX.Element {
           </table>
         </div>
 
-        {/* NA */}
         <h1 className="text-3xl underline bold font-ubuntu">
           NA Event Schedule
         </h1>
@@ -119,7 +110,6 @@ export default function EventSchedule(): import("react").JSX.Element {
           </table>
         </div>
 
-        {/* OCE */}
         <h1 className="text-3xl underline bold font-ubuntu">
           OCE Event Schedule
         </h1>

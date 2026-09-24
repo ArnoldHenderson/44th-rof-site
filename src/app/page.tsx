@@ -1,41 +1,31 @@
-import { Header } from "@/app/components/header";
-import { Footer } from "@/app/components/footer";
-import { HeroCarousel } from "@/app/components/hero-carousel";
-import { InfoCardsCreator } from "@/app/components/info-cards-creator";
+import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
+import HeroCarousel from "@/app/components/hero-carousel";
+import InfoCardsCreator from "@/app/components/info-cards-creator";
 
-// JSON Data for info cards
 import infoCardsData from "@/data/InfoCards/info-cards.json";
 
-{
-  /* Home page, add more elements when needed */
-}
+/**
+ * Home page, add more elements when needed.
+ * @module HomePage
+ */
+
 export default function Home() {
   return (
     <>
-      <Header />
+      <SiteHeader />
 
-      {/* Main Content Section*/}
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
-        {/* Hero Carousel Section */}
         <div className="container mx-auto">
           <HeroCarousel />
-        </div>
 
-        <br />
-        <br />
-        <hr className="my-8 border-gray-300" />
-        <br />
+          <hr />
 
-        {/* Info Cards Section */}
-        <div className="container mx-auto mt-8">
           <InfoCardsCreator infoCards={infoCardsData} />
         </div>
-
-        <br />
         <br />
       </main>
 
-      <Footer />
+      <SiteFooter />
     </>
   );
 }
