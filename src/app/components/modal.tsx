@@ -2,6 +2,14 @@
 
 import { useEffect } from "react";
 
+/**
+ * Modal component.
+ * @component Modal
+ * @description Renders a modal dialog that can be closed by clicking outside or pressing the Escape key.
+ * @returns {JSX.Element} The rendered modal component.
+ * @param {ModalProps} props - The properties for the modal component.
+ */
+
 type ModalProps = {
   onClose: () => void;
   children: import("react").ReactNode;

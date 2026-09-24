@@ -1,24 +1,27 @@
 import Image from "next/image";
-import { Header, Footer } from "@/app/components/header-footer";
+import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 import CompanyLister from "@/app/components/company-lister";
 import InfoCardsCreator from "@/app/components/info-cards-creator";
 import RegimentEvents from "@/app/components/regiment-events";
 
-// JSON Data Imports
+/** JSON Data Imports for the About page */
 import specialistCompanies from "@/data/Companies/specialist-companies.json";
 import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
 import infoCards from "@/data/InfoCards/info-cards.json";
 
+/**
+ * About page for the website.
+ * @module AboutPage
+ */
+
 export default function About() {
   return (
     <>
-      <Header />
+      <SiteHeader />
 
-      {/* Main Content Section */}
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <div className="mb-6 left-10">
-            {/* About Section */}
             <h1 className="mb-6 text-3xl font-bold font-noto">
               About the 44th
             </h1>
@@ -67,39 +70,34 @@ export default function About() {
           </div>
         </div>
 
-        <hr className="my-8 border-gray-300" />
+        <hr />
 
-        {/* Regiment Events Section */}
         <RegimentEvents />
 
-        <hr className="my-8 border-gray-300" />
+        <hr />
 
-        {/* Special Companies Section */}
         <CompanyLister
           companies={specialistCompanies.companies}
           companySectionInfo={specialistCompanies.companySectionInfo}
         />
 
-        <br />
-        <hr className="mb-8 border-gray-300" />
+        <hr />
 
-        {/* Auxiliary Companies Section */}
         <CompanyLister
           companies={auxiliaryCompanies.companies}
           companySectionInfo={auxiliaryCompanies.companySectionInfo}
         />
 
-        <br />
-        <hr className="mb-8 border-gray-300" />
-        <br />
+        <hr />
 
-        {/* Information Cards Section */}
         <div className="container mx-auto mt-8">
           <InfoCardsCreator infoCards={infoCards} />
         </div>
+
+        <br />
       </main>
 
-      <Footer />
+      <SiteFooter />
     </>
   );
 }

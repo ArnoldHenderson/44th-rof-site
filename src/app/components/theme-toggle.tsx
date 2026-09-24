@@ -3,6 +3,13 @@
 import Image from "next/image";
 import { useSyncExternalStore } from "react";
 
+/**
+ * ThemeToggle component.
+ * @component ThemeToggle
+ * @description Renders a button to toggle between light and dark themes.
+ * @returns {JSX.Element} The rendered theme toggle button.
+ */
+
 function subscribeToTheme(callback: () => void): () => void {
   const observer = new MutationObserver(callback);
   observer.observe(document.documentElement, {

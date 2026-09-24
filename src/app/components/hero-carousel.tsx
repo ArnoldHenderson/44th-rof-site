@@ -4,9 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-{
-  /* Photos for the carousel */
-}
+/**
+ * Hero Carousel component for the website.
+ * @description Displays a changing carousel of hero images on the homepage, takes 5 seconds per image.
+ * @module HeroCarousel
+ */
+
 const photos = [
   "/media/images/regiment_photos/regphoto8.png",
   "/media/images/regiment_photos/regphoto1.png",
@@ -19,9 +22,6 @@ const photos = [
 ];
 
 export default function HeroCarousel(): import("react").JSX.Element {
-  {
-    /* Code for the carousel, swaps the image every 5 seconds */
-  }
   const [activePhoto, setActivePhoto] = useState(0);
 
   useEffect(() => {
@@ -34,7 +34,6 @@ export default function HeroCarousel(): import("react").JSX.Element {
 
   return (
     <div className="home-hero relative isolate mt-4 w-full overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 shadow-lg">
-      {/* Function updates the image */}
       {photos.map((photo, index) => (
         <Image
           key={index}
@@ -49,7 +48,6 @@ export default function HeroCarousel(): import("react").JSX.Element {
         />
       ))}
 
-      {/* Hero Card */}
       <div className="relative z-10 m-4 flex min-h-96 max-w-2xl flex-col rounded-lg bg-black/65 p-6 text-white backdrop-blur-[2px] md:m-6">
         <h1 className="mb-6 text-3xl font-bold font-noto">
           Looking for the best way to play Holdfast?
@@ -87,7 +85,6 @@ export default function HeroCarousel(): import("react").JSX.Element {
           </h2>
         </div>
 
-        {/* About us button */}
         <Link
           href="/about"
           title="Learn more about us"

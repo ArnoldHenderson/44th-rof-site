@@ -34,11 +34,27 @@
   color: var(--surface-foreground);
 }
 
+/* Reset default margin and padding for html and body */
+
+html,
 body {
+  margin: 0;
+  padding: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-ubuntu), sans-serif;
 }
+
+/* Space between sections */
+
+hr,
+br {
+  border: none;
+  border-top: 1px solid var(--surface-foreground);
+  margin: 3rem 0;
+}
+
+/* Space between paragraphs and headings */
 
 .site-main p + p {
   margin-top: 1rem;

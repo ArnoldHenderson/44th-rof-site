@@ -1,10 +1,10 @@
 import { MetadataRoute } from "next";
 
-{
-  /* 
-  Robots configuration for search engines and blocking malicious/unwanted bots
-*/
-}
+/**
+ * Robots configuration for search engines and blocking malicious/unwanted bots
+ * @module Robots
+ */
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [

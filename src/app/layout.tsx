@@ -3,6 +3,11 @@ import { Geist, Geist_Mono, Noto_Sans, Roboto, Ubuntu } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+/**
+ * Root layout for the website.
+ * @module RootLayout
+ */
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

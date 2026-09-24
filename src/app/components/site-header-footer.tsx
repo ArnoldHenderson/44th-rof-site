@@ -5,8 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 
-// JSON Data for Navigation Header
-import NavHeader from "@/data/Navigation/Nav-Header.json";
+import NavHeaderData from "@/data/Navigation/header-nav.json";
+
+/**
+ * SiteHeader and SiteFooter components.
+ * @module SiteHeaderFooter
+ */
 
 type NavItem = {
   name: string;
@@ -17,12 +21,12 @@ type NavItem = {
 };
 
 // Header Component
-export function Header(): import("react").JSX.Element {
+export function SiteHeader(): import("react").JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="site-header p-4 relative">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="site-header relative border-b border-slate-300/70 dark:border-slate-700/80">
+      <div className="container mx-auto flex items-center justify-between py-3">
         {/* Site Title */}
         <div className="flex items-center">
           <Image
@@ -60,7 +64,7 @@ export function Header(): import("react").JSX.Element {
             isOpen ? "flex" : "hidden"
           } md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-(--surface) items-center gap-4 p-4 md:p-0 z-20`}
         >
-          {NavHeader.map((item: NavItem, index: number) => (
+          {NavHeaderData.map((item: NavItem, index: number) => (
             <Link
               key={index}
               href={item.href}
@@ -87,12 +91,10 @@ export function Header(): import("react").JSX.Element {
   );
 }
 
-// Footer Component
-export function Footer(): import("react").JSX.Element {
+export function SiteFooter(): import("react").JSX.Element {
   return (
     <>
-      {/* Site Footer, add more elements when needed */}
-      <footer className="site-footer mt-8 p-4">
+      <footer className="site-footer pt-4 pb-5">
         <div className="container mx-auto flex items-center justify-between">
           <div>
             <p className="text-sm">

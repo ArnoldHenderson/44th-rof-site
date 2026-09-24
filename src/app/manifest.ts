@@ -1,5 +1,10 @@
 import type { MetadataRoute } from "next";
 
+/**
+ * Web App Manifest configuration for the website.
+ * @module Manifest
+ */
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: "/",
