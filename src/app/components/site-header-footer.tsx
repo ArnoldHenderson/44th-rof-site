@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
@@ -20,14 +20,45 @@ type NavItem = {
   icon: string;
 };
 
-// Header Component
 export function SiteHeader(): import("react").JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+
+  // Close the mobile nav when clicking/tapping outside of it or pressing Escape
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function handlePointerDown(event: MouseEvent | TouchEvent) {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
 
   return (
-    <header className="site-header relative border-b border-slate-300/70 dark:border-slate-700/80">
+    <header
+      ref={headerRef}
+      className="site-header relative border-b border-slate-300/70 dark:border-slate-700/80"
+    >
       <div className="container mx-auto flex items-center justify-between py-3">
-        {/* Site Title */}
         <div className="flex items-center">
           <Image
             src="/media/images/branding/logo.svg"
@@ -45,7 +76,6 @@ export function SiteHeader(): import("react").JSX.Element {
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden p-2 border border-gray-400 dark:border-gray-600 rounded"
           onClick={() => setIsOpen(!isOpen)}
@@ -58,7 +88,6 @@ export function SiteHeader(): import("react").JSX.Element {
           <div className="w-6 h-0.5 bg-gray-700 dark:bg-gray-300"></div>
         </button>
 
-        {/* Site Navigation */}
         <nav
           className={`${
             isOpen ? "flex" : "hidden"
@@ -98,8 +127,8 @@ export function SiteFooter(): import("react").JSX.Element {
         <div className="container mx-auto flex items-center justify-between">
           <div>
             <p className="text-sm">
-              &copy; {new Date().getFullYear()} 44th Regiment of Foot. All
-              rights reserved.
+              &copy; 2022 - {new Date().getFullYear()} 44th Regiment of Foot.
+              All rights reserved.
             </p>
           </div>
           <nav className="flex items-center gap-4"></nav>

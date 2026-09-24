@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 import CompanyLister from "@/app/components/company-lister";
 import InfoCardsCreator from "@/app/components/info-cards-creator";
