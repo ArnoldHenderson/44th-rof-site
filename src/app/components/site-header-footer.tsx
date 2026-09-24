@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 
-import NavHeaderData from "@/data/Navigation/header-nav.json";
+import navHeaderData from "@/data/Navigation/header-nav.json";
 
 /**
  * SiteHeader and SiteFooter components.
@@ -93,7 +93,7 @@ export function SiteHeader(): import("react").JSX.Element {
             isOpen ? "flex" : "hidden"
           } md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-(--surface) items-center gap-4 p-4 md:p-0 z-20`}
         >
-          {NavHeaderData.map((item: NavItem, index: number) => (
+          {navHeaderData.map((item: NavItem, index: number) => (
             <Link
               key={index}
               href={item.href}

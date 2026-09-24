@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 /**
  * Modal component.
@@ -13,39 +13,81 @@ import { useEffect } from "react";
 type ModalProps = {
   onClose: () => void;
   children: import("react").ReactNode;
+  titleId: string;
 };
 
-export default function Modal({ onClose, children }: ModalProps) {
-  // Close the modal when the Escape key is pressed
+export default function Modal({ onClose, children, titleId }: ModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    const modal = modalRef.current;
+
+    modal?.focus();
+    document.body.style.overflow = "hidden";
+
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
         onClose();
+        return;
+      }
+
+      if (event.key !== "Tab" || !modal) return;
+
+      const focusable = modal.querySelectorAll<HTMLElement>(
+        'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+
+      if (focusable.length === 0) {
+        event.preventDefault();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
       }
     }
 
     document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+      previouslyFocused?.focus();
+    };
   }, [onClose]);
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
-      onClick={onClose}
+      onMouseDown={onClose}
     >
       <div
-        className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-base  bg-(--surface) text-(--surface-foreground) p-6 shadow-lg"
-        onClick={(e) => e.stopPropagation()}
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
+        className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-base bg-(--surface) p-6 text-(--surface-foreground) shadow-lg"
+        onMouseDown={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
-          aria-label="Close"
-          title="Close"
-          className="absolute right-3 top-3 text-2xl leading-none opacity-70 hover:opacity-100 transition-opacity duration-200"
+          aria-label="Close event schedule"
+          title="Close event schedule"
+          className="absolute right-3 top-3 text-2xl leading-none opacity-70 transition-opacity hover:opacity-100"
         >
           &times;
         </button>
+
         {children}
       </div>
     </div>
