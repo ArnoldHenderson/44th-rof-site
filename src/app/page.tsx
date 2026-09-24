@@ -17,11 +17,9 @@ export default function Home() {
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <HeroCarousel />
-        </div>
 
-        <hr />
+          <hr />
 
-        <div className="container mx-auto mt-8">
           <InfoCardsCreator infoCards={infoCardsData} />
         </div>
         <br />
