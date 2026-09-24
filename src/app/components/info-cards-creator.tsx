@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { InfoCard } from "@/types/content";
 
 /**
  * InfoCardsCreator component.
@@ -10,30 +11,20 @@ import Link from "next/link";
  * @param {InfoCard[]} infoCards - Array of info card objects to display.
  */
 
-type InfoCard = {
-  title: string;
-  description: string;
-  links: {
-    link: string;
-    linkTitle: string;
-    linkTarget: string;
-    linkRel: string;
-    linkStyle: string;
-  }[];
-};
-
 export default function InfoCardsCreator({
   infoCards,
+  className = "",
 }: {
   infoCards: InfoCard[];
+  className?: string;
 }): import("react").JSX.Element {
   return (
     <>
-      <div className="container mx-auto">
+      <div className={`container mx-auto ${className}`}>
         <div className="flex flex-wrap justify-center gap-4">
-          {infoCards.map((info: InfoCard, index: number) => (
+          {infoCards.map((info) => (
             <div
-              key={index}
+              key={info.title}
               className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100"
             >
               <h3 className="text-xl font-bold mb-4">
@@ -44,9 +35,9 @@ export default function InfoCardsCreator({
 
               <p className="mb-4">{info.description}</p>
 
-              {info.links.map((link, linkIndex) => (
+              {info.links.map((link) => (
                 <Link
-                  key={linkIndex}
+                  key={`${link.link}-${link.linkTitle}`}
                   href={link.link}
                   target={link.linkTarget}
                   rel={link.linkRel}

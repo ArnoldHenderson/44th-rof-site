@@ -1,6 +1,7 @@
 import EventScheduleEU from "@/data/EventSchedules/event-schedule-eu.json";
 import EventScheduleNA from "@/data/EventSchedules/event-schedule-na.json";
 import EventScheduleOCE from "@/data/EventSchedules/event-schedule-oce.json";
+import type { Schedule } from "@/types/content";
 
 /**
  * Generates and displays the event schedule tables for EU, NA, and OCE regions.
@@ -9,50 +10,7 @@ import EventScheduleOCE from "@/data/EventSchedules/event-schedule-oce.json";
  * @returns {JSX.Element} The rendered event schedule component.
  */
 
-type Event = {
-  name: string;
-  timeuk: string;
-};
-
-type DaySchedule = {
-  [eventKey: string]: Event;
-};
-
-type Schedule = {
-  [day: string]: DaySchedule;
-};
-
-function CreateEUScheduleTableElements() {
-  const schedule = EventScheduleEU as Schedule;
-
-  return Object.entries(schedule).flatMap(([day, events]) =>
-    Object.entries(events).map(([eventKey, event]) => (
-      <tr key={`${day}-${eventKey}`}>
-        <td>{day.charAt(0).toUpperCase() + day.slice(1)}</td>
-        <td>{event.name}</td>
-        <td>{event.timeuk}</td>
-      </tr>
-    )),
-  );
-}
-
-function CreateNAScheduleTableElements() {
-  const schedule = EventScheduleNA as Schedule;
-
-  return Object.entries(schedule).flatMap(([day, events]) =>
-    Object.entries(events).map(([eventKey, event]) => (
-      <tr key={`${day}-${eventKey}`}>
-        <td>{day.charAt(0).toUpperCase() + day.slice(1)}</td>
-        <td>{event.name}</td>
-        <td>{event.timeuk}</td>
-      </tr>
-    )),
-  );
-}
-
-function CreateOCEScheduleTableElements() {
-  const schedule = EventScheduleOCE as Schedule;
-
+function createScheduleTableRows(schedule: Schedule) {
   return Object.entries(schedule).flatMap(([day, events]) =>
     Object.entries(events).map(([eventKey, event]) => (
       <tr key={`${day}-${eventKey}`}>
@@ -89,7 +47,9 @@ export default function EventSchedule(): import("react").JSX.Element {
               </tr>
             </thead>
 
-            <tbody>{CreateEUScheduleTableElements()}</tbody>
+            <tbody>
+              {createScheduleTableRows(EventScheduleEU as Schedule)}
+            </tbody>
           </table>
         </div>
 
@@ -106,7 +66,9 @@ export default function EventSchedule(): import("react").JSX.Element {
               </tr>
             </thead>
 
-            <tbody>{CreateNAScheduleTableElements()}</tbody>
+            <tbody>
+              {createScheduleTableRows(EventScheduleNA as Schedule)}
+            </tbody>
           </table>
         </div>
 
@@ -123,7 +85,9 @@ export default function EventSchedule(): import("react").JSX.Element {
               </tr>
             </thead>
 
-            <tbody>{CreateOCEScheduleTableElements()}</tbody>
+            <tbody>
+              {createScheduleTableRows(EventScheduleOCE as Schedule)}
+            </tbody>
           </table>
         </div>
       </div>

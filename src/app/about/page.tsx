@@ -4,9 +4,9 @@ import InfoCardsCreator from "@/app/components/info-cards-creator";
 import RegimentEvents from "@/app/components/regiment-events";
 
 /** JSON Data Imports for the About page */
-import specialistCompanies from "@/data/Companies/specialist-companies.json";
-import auxiliaryCompanies from "@/data/Companies/auxiliary-companies.json";
-import infoCards from "@/data/InfoCards/info-cards.json";
+import specialistCompaniesData from "@/data/Companies/specialist-companies.json";
+import auxiliaryCompaniesData from "@/data/Companies/auxiliary-companies.json";
+import infoCardsData from "@/data/InfoCards/info-cards.json";
 
 /**
  * About page for the website.
@@ -20,8 +20,9 @@ export default function About() {
 
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
-          <br />
-          <h1 className="mb-6 text-3xl font-bold font-noto">About the 44th</h1>
+          <h1 className="mb-6 mt-6 text-3xl font-bold font-noto">
+            About the 44th
+          </h1>
           <div className="mb-6 text-1xl">
             <p>
               The 44th has always been a chaotic and casual regiment for the
@@ -66,22 +67,20 @@ export default function About() {
           <hr />
 
           <CompanyLister
-            companies={specialistCompanies.companies}
-            companySectionInfo={specialistCompanies.companySectionInfo}
+            companies={specialistCompaniesData.companies}
+            companySectionInfo={specialistCompaniesData.companySectionInfo}
           />
 
           <hr />
 
           <CompanyLister
-            companies={auxiliaryCompanies.companies}
-            companySectionInfo={auxiliaryCompanies.companySectionInfo}
+            companies={auxiliaryCompaniesData.companies}
+            companySectionInfo={auxiliaryCompaniesData.companySectionInfo}
           />
 
           <hr />
 
-          <InfoCardsCreator infoCards={infoCards} />
-
-          <br />
+          <InfoCardsCreator infoCards={infoCardsData} className="mb-6" />
         </div>
       </main>
 

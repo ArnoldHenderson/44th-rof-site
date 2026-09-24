@@ -48,7 +48,10 @@ export default function RegimentEvents() {
       </div>
 
       {isOpen && (
-        <Modal onClose={() => setIsOpen(false)}>
+        <Modal
+          onClose={() => setIsOpen(false)}
+          titleId="regiment-events-schedule-title"
+        >
           <EventSchedule />
         </Modal>
       )}

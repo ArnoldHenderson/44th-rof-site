@@ -1,6 +1,7 @@
 "use client;";
 
 import Image from "next/image";
+import type { Company, CompanySectionHeader } from "@/types/content";
 
 /**
  * Company List containing an individual company card for each company.
@@ -10,32 +11,21 @@ import Image from "next/image";
  * @returns {JSX.Element} The rendered company list component.
  * @param {CompanyList[]} companies - Array of company objects to display.
  * @param {CompanySectionHeader} companySectionInfo - Information for the section header and description.
+ * @param {string} [className] - Optional additional class names for the container div.
  */
-
-type CompanySectionHeader = {
-  sectionHeader: string;
-  sectionDescription: string;
-};
-
-type CompanyList = {
-  key: string;
-  name: string;
-  description: string;
-  personQuoted: string;
-  logo: string;
-  bgImage: string;
-};
 
 export default function CompanyLister({
   companies,
   companySectionInfo,
+  className = "",
 }: {
-  companies: CompanyList[];
+  companies: Company[];
   companySectionInfo: CompanySectionHeader;
+  className?: string;
 }): import("react").JSX.Element {
   return (
     <>
-      <div className="container mx-auto">
+      <div className={`container mx-auto ${className}`}>
         <h1 className="text-3xl font-bold mb-6">
           {companySectionInfo.sectionHeader}
         </h1>
