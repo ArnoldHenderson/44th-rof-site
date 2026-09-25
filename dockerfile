@@ -5,6 +5,8 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY . .
+ARG NEXT_OUTPUT=standalone
+ENV NEXT_OUTPUT=$NEXT_OUTPUT
 RUN npm run build
 
 FROM node:22-alpine AS runner
