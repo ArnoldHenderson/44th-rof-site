@@ -9,6 +9,6 @@ node_modules
 *.log
 Dockerfile*
 dockerfile
-README.md
 AGENTS.md
 CLAUDE.md
+BUILDDOCKER.md
