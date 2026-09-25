@@ -15,6 +15,10 @@ ENV NODE_ENV=production
 ARG PORT=3000
 ENV PORT=$PORT
 
+# runtime only needs `node`; strip bundled npm/corepack and their vulnerable deps (e.g. ip-address)
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack \
+    /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
+
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
