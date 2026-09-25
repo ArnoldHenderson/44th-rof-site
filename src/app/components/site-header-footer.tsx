@@ -109,7 +109,11 @@ export function SiteHeader(): import("react").JSX.Element {
                 rel={item.rel}
                 title={item.title}
                 aria-current={isActive ? "page" : undefined}
-                className={`${item.classNames || "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"} px-2 py-2 transition-colors ${isActive ? "underline underline-offset-4 decoration-2" : ""}`}
+                className={`${item.classNames || "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"} px-2 py-2 transition-colors ${
+                  isActive
+                    ? "underline underline-offset-4 decoration-2 text-white!"
+                    : ""
+                }`}
               >
                 {item.icon != "" && (
                   <Image

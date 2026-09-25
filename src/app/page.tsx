@@ -1,4 +1,3 @@
-import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 import HeroCarousel from "@/app/components/hero-carousel";
 import InfoCardsCreator from "@/app/components/info-cards-creator";
 
@@ -12,8 +11,6 @@ import infoCardsData from "@/data/InfoCards/info-cards.json";
 export default function Home() {
   return (
     <>
-      <SiteHeader />
-
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <HeroCarousel />
@@ -24,8 +21,6 @@ export default function Home() {
         </div>
         <br />
       </main>
-
-      <SiteFooter />
     </>
   );
 }

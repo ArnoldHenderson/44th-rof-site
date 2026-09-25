@@ -1,4 +1,3 @@
-import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 import CompanyLister from "@/app/components/company-lister";
 import InfoCardsCreator from "@/app/components/info-cards-creator";
 import RegimentEvents from "@/app/components/regiment-events";
@@ -16,8 +15,6 @@ import infoCardsData from "@/data/InfoCards/info-cards.json";
 export default function About() {
   return (
     <>
-      <SiteHeader />
-
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <h1 className="mb-6 mt-6 text-3xl font-bold font-noto">
@@ -83,8 +80,6 @@ export default function About() {
           <InfoCardsCreator infoCards={infoCardsData} className="mb-6" />
         </div>
       </main>
-
-      <SiteFooter />
     </>
   );
 }

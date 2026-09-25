@@ -20,11 +20,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
   --font-ubuntu: var(--font-ubuntu);
   --font-roboto: var(--font-roboto);
-  --font-noto: var(--font-noto-sans);
 }
 /* stylelint-enable at-rule-no-unknown */
 
@@ -51,6 +48,23 @@ hr {
   border: none;
   border-top: 1px solid var(--surface-foreground);
   margin: 3rem 0;
+}
+
+/* Heading styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-ubuntu), sans-serif;
+}
+
+/* Paragraph styling */
+
+p {
+  font-family: var(--font-roboto), sans-serif;
 }
 
 /* Space between paragraphs and headings */

@@ -1,23 +1,19 @@
 import { Analytics } from "@vercel/analytics/next";
+import { cookies } from "next/headers";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans, Roboto, Ubuntu } from "next/font/google";
-import Script from "next/script";
+import type { ReactNode } from "react";
+import { Roboto, Ubuntu } from "next/font/google";
 import "./globals.css";
 
+import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 /**
  * Root layout for the website.
  * @module RootLayout
  */
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+type RootLayoutProps = {
+  children: ReactNode;
+};
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -30,16 +26,11 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "44th Regiment of Foot - Official Site",
   description:
     "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War.",
+  metadataBase: new URL("https://44th-rof-site.vercel.app"),
   keywords: [
     "44th Regiment of Foot",
     "Official Site",
@@ -98,26 +89,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const theme = (await cookies()).get("theme")?.value;
+  const isDark = theme === "dark";
+
   return (
     <html
       lang="en-GB"
-      className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} ${roboto.variable} ${notoSans.variable} h-full antialiased`}
-      suppressHydrationWarning
+      className={`${ubuntu.variable} ${roboto.variable} ${
+        isDark ? "dark" : ""
+      } h-full antialiased`}
     >
       <head>
         <noscript>You need to enable JavaScript to run this website.</noscript>
-        {/* Sets the theme class before paint to avoid a light/dark flash */}
-        <Script
-          id="theme-initializer"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d);}catch(e){}})();`,
-          }}
-        />
       </head>
       <body className="min-h-full flex flex-col">
+        <SiteHeader />
         {children}
+        <SiteFooter />
         <Analytics />
       </body>
     </html>
