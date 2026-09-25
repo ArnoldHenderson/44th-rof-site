@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import { cookies } from "next/headers";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Roboto, Ubuntu } from "next/font/google";
 import "./globals.css";
 
@@ -9,6 +10,10 @@ import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
  * Root layout for the website.
  * @module RootLayout
  */
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -84,7 +89,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: RootLayoutProps) {
   const theme = (await cookies()).get("theme")?.value;
   const isDark = theme === "dark";
 

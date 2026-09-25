@@ -1,4 +1,3 @@
-import { SiteHeader, SiteFooter } from "@/app/components/site-header-footer";
 import HeroCarousel from "@/app/components/hero-carousel";
 import InfoCardsCreator from "@/app/components/info-cards-creator";
 
