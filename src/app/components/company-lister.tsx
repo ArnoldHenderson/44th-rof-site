@@ -26,9 +26,9 @@ export default function CompanyLister({
   return (
     <>
       <div className={`container mx-auto ${className}`}>
-        <h1 className="text-3xl font-bold mb-6">
+        <h2 className="text-3xl font-bold mb-6">
           {companySectionInfo.sectionHeader}
-        </h1>
+        </h2>
         <p className="mb-8">{companySectionInfo.sectionDescription}</p>
 
         {companies.map((company) => (
@@ -50,9 +50,9 @@ export default function CompanyLister({
             </div>
 
             <div className="flex flex-col gap-4 flex-1 relative z-10 p-2">
-              <h1 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
+              <h3 className="text-3xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md font-ubuntu">
                 {company.name}
-              </h1>
+              </h3>
               {/* Company Description and Person Quoted */}
               <p className="text-1xl text-white text bg-black/60 p-6 rounded-lg backdrop-blur-md">
                 {company.description} <br />

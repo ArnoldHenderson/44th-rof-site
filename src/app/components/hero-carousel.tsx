@@ -60,29 +60,29 @@ export default function HeroCarousel(): import("react").JSX.Element {
         </h1>
 
         <div className="mb-6 text-xl font-bold font-noto">
-          <h2>
+          <p>
             We are a group of lads and lasses who like to play the game
             casually, we are centred around fun when it comes to the game such
             as chaotic line formations which usually end up with us getting shot
             by artillery, but it is always a laugh.
-          </h2>
-          <h2>
+          </p>
+          <p>
             With loads of ranks to climb and a great community to be a part of,
             we are always looking for more{" "}
             <span className="line-through">cannon fodder</span> members to join
             our ranks!
-          </h2>
-          <h2>
+          </p>
+          <p>
             If you are interested and want to see more, then go to our about
             page here!
-          </h2>
-          <h2>
+          </p>
+          <p>
             We have{" "}
             <span className="italic underline text-yellow-600">
               EU, NA and OCE
             </span>{" "}
             events for you to dabble in!
-          </h2>
+          </p>
         </div>
 
         <Link

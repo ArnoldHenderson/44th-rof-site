@@ -17,9 +17,9 @@ export default function RegimentEvents() {
     <>
       <div className="container mx-auto">
         <div className="mb-6 left-10">
-          <h1 className="mb-6 text-3xl font-bold font-noto">
+          <h2 className="mb-6 text-3xl font-bold font-noto">
             Our Regiment Events
-          </h1>
+          </h2>
           <div className="mb-6 text-1xl">
             <p>
               Our regiment attends events that usually consist of an hour of fun
@@ -52,7 +52,7 @@ export default function RegimentEvents() {
           onClose={() => setIsOpen(false)}
           titleId="regiment-events-schedule-title"
         >
-          <EventSchedule />
+          <EventSchedule titleId="regiment-events-schedule-title" />
         </Modal>
       )}
     </>

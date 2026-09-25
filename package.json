@@ -1,6 +1,6 @@
 {
   "name": "44th-rof-site",
-  "version": "0.5.2",
+  "version": "0.5.8",
   "private": true,
   "scripts": {
     "dev": "next dev",

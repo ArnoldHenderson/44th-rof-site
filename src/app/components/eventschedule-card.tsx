@@ -22,21 +22,25 @@ function createScheduleTableRows(schedule: Schedule) {
   );
 }
 
-export default function EventSchedule(): import("react").JSX.Element {
+export default function EventSchedule({
+  titleId,
+}: {
+  titleId: string;
+}): import("react").JSX.Element {
   return (
     <>
       <div className="z-10 drop-shadow-[0_10px_20px_rgba(0,0,0,0.10)] dark:drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
-        <h1 className="text-4xl underline bold font-ubuntu">
+        <h2 id={titleId} className="text-4xl underline bold font-ubuntu">
           44th Event Schedule
-        </h1>
-        <h1 className="text-1xl font-ubuntu text-gray-400">
+        </h2>
+        <p className="text-1xl font-ubuntu text-gray-400">
           Events may be canceled or rescheduled. This schedule is subject to
           change.
-        </h1>
+        </p>
 
-        <h1 className="text-3xl underline bold font-ubuntu">
+        <h3 className="text-3xl underline bold font-ubuntu">
           EU Event Schedule
-        </h1>
+        </h3>
         <div className="mb-6 table-auto relative overflow-x-auto bg-(--surface) text-(--surface-foreground) shadow-xs rounded-base border border-default">
           <table className="w-full text-sm text-left rtl:text-right text-body m-2">
             <thead className="border-b border-default">
@@ -53,9 +57,9 @@ export default function EventSchedule(): import("react").JSX.Element {
           </table>
         </div>
 
-        <h1 className="text-3xl underline bold font-ubuntu">
+        <h3 className="text-3xl underline bold font-ubuntu">
           NA Event Schedule
-        </h1>
+        </h3>
         <div className="mb-6 table-auto relative overflow-x-auto bg-(--surface) text-(--surface-foreground) shadow-xs rounded-base border border-default">
           <table className="w-full text-sm text-left rtl:text-right text-body m-2">
             <thead className="border-b border-default">
@@ -72,9 +76,9 @@ export default function EventSchedule(): import("react").JSX.Element {
           </table>
         </div>
 
-        <h1 className="text-3xl underline bold font-ubuntu">
+        <h3 className="text-3xl underline bold font-ubuntu">
           OCE Event Schedule
-        </h1>
+        </h3>
         <div className="mb-6 table-auto relative overflow-x-auto bg-(--surface) text-(--surface-foreground) shadow-xs rounded-base border border-default">
           <table className="w-full text-sm text-left rtl:text-right text-body m-2">
             <thead className="border-b border-default">
