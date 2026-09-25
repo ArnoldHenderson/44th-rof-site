@@ -1,30 +1,42 @@
 [
   {
+    "key": "home",
     "name": "Home",
     "href": "/",
     "target": "_self",
+    "rel": "",
     "title": "Go to Home Page",
+    "classNames": "",
     "icon": ""
   },
   {
+    "key": "about",
     "name": "About",
     "href": "/about",
     "target": "_self",
+    "rel": "",
+    "classNames": "",
     "title": "Learn more about us",
     "icon": ""
   },
   {
-    "name": "Join Us",
-    "href": "https://discord.gg/44th",
-    "target": "_blank",
-    "title": "Join our Discord!",
-    "icon": "/media/images/icons/generic/icon-discord.svg"
-  },
-  {
+    "key": "kofi",
     "name": "Donate",
     "href": "https://ko-fi.com/44throf",
     "target": "_blank",
+    "rel": "noopener noreferrer",
+    "classNames": "bg-yellow-700 dark:bg-yellow-900 border border-yellow-500 rounded transition-colors text-yellow-400",
     "title": "Support us on Ko-fi",
-    "icon": "/media/images/icons/generic/icon-kofi.svg"
+    "icon": "/media/images/icons/generic/icon-gift.png"
+  },
+  {
+    "key": "discord",
+    "name": "Join our Ranks!",
+    "href": "https://discord.gg/44th",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "classNames": "bg-yellow-700 dark:bg-yellow-900 border border-yellow-500 rounded transition-colors text-yellow-400",
+    "title": "Join our Discord!",
+    "icon": "/media/images/icons/generic/icon-discord.svg"
   }
 ]

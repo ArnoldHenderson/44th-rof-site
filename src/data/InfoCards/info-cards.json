@@ -8,7 +8,7 @@
         "linkTitle": "Join Our Discord",
         "linkTarget": "_blank",
         "linkRel": "noopener noreferrer",
-        "linkStyle": "bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        "linkStyle": "bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
       }
     ]
   },
@@ -21,14 +21,14 @@
         "linkTitle": "YouTube",
         "linkTarget": "_blank",
         "linkRel": "noopener noreferrer",
-        "linkStyle": "bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        "linkStyle": "bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded"
       },
       {
         "link": "https://www.tiktok.com/@44thregofficial",
         "linkTitle": "TikTok",
         "linkTarget": "_blank",
         "linkRel": "noopener noreferrer",
-        "linkStyle": "bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ml-2"
+        "linkStyle": "bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded ml-2"
       }
     ]
   },
@@ -41,7 +41,7 @@
         "link": "https://discord.gg/kRVEVpRB7",
         "linkTarget": "_blank",
         "linkRel": "noopener noreferrer",
-        "linkStyle": "bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        "linkStyle": "bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
       }
     ]
   }

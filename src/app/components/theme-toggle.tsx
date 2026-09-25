@@ -28,7 +28,11 @@ function getServerThemeSnapshot(): boolean {
   return false;
 }
 
-export default function ThemeToggle(): import("react").JSX.Element {
+export default function ThemeToggle({
+  className,
+}: {
+  className?: string;
+}): import("react").JSX.Element {
   const isDark = useSyncExternalStore(
     subscribeToTheme,
     getThemeSnapshot,
@@ -47,23 +51,23 @@ export default function ThemeToggle(): import("react").JSX.Element {
       onClick={toggleTheme}
       title={isDark ? "Switch to light mode" : "Switch to dark mode"}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      className="p-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors"
+      className={`inline-flex items-center justify-center p-2 border border-gray-400 dark:border-gray-600 rounded hover:bg-gray-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100 transition-colors ${className || ""}`}
     >
       {isDark ? (
         <Image
           src="/media/images/icons/generic/icon-moon.svg"
           alt="Moon Icon"
-          className="h-4 w-4 brightness-0 invert"
-          width={16}
-          height={16}
+          className="h-5 w-5 brightness-0 invert"
+          width={20}
+          height={20}
         />
       ) : (
         <Image
           src="/media/images/icons/generic/icon-sun.svg"
           alt="Sun Icon"
-          className="h-4 w-4 brightness-0"
-          width={16}
-          height={16}
+          className="h-5 w-5 brightness-0"
+          width={20}
+          height={20}
         />
       )}
     </button>
