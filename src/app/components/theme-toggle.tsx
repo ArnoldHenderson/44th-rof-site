@@ -41,8 +41,10 @@ export default function ThemeToggle({
 
   function toggleTheme() {
     const next = !isDark;
+    const theme = next ? "dark" : "light";
+
     document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
+    document.cookie = `theme=${theme}; Path=/; Max-Age=31536000; SameSite=Lax`;
   }
 
   return (

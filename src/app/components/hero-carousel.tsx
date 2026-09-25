@@ -11,14 +11,14 @@ import { useEffect, useState } from "react";
  */
 
 const photos = [
-  "/media/images/regiment_photos/regphoto8.png",
-  "/media/images/regiment_photos/regphoto1.png",
-  "/media/images/regiment_photos/regphoto2.png",
-  "/media/images/regiment_photos/regphoto3.png",
-  "/media/images/regiment_photos/regphoto4.png",
-  "/media/images/regiment_photos/regphoto5.png",
-  "/media/images/regiment_photos/regphoto6.png",
-  "/media/images/regiment_photos/regphoto7.png",
+  "/media/images/regiment_photos/regphoto8.webp",
+  "/media/images/regiment_photos/regphoto1.webp",
+  "/media/images/regiment_photos/regphoto2.webp",
+  "/media/images/regiment_photos/regphoto3.webp",
+  "/media/images/regiment_photos/regphoto4.webp",
+  "/media/images/regiment_photos/regphoto5.webp",
+  "/media/images/regiment_photos/regphoto6.webp",
+  "/media/images/regiment_photos/regphoto7.webp",
 ];
 
 export default function HeroCarousel(): import("react").JSX.Element {

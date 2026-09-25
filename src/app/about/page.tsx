@@ -16,8 +16,6 @@ import infoCardsData from "@/data/InfoCards/info-cards.json";
 export default function About() {
   return (
     <>
-      <SiteHeader />
-
       <main className="site-main blurred-glow-bg grow p-4 font-noto">
         <div className="container mx-auto">
           <h1 className="mb-6 mt-6 text-3xl font-bold font-noto">
@@ -83,8 +81,6 @@ export default function About() {
           <InfoCardsCreator infoCards={infoCardsData} className="mb-6" />
         </div>
       </main>
-
-      <SiteFooter />
     </>
   );
 }
