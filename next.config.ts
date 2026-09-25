@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  ...(process.env.NEXT_OUTPUT === "standalone" ? { output: "standalone" } : {}),
 };
 
 export default nextConfig;

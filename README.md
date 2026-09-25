@@ -7,3 +7,5 @@ This websites framework is Next.js using TypeScript.
 The site will have a home page which will contain little but enough information to get the to join or make them read more about the regiment in the about page which will talk about the specialist companies and auxiliary companies.
 
 Discord Link to the 44th: [https://discord.gg/44th](https://discord.gg/44th)
+
+-# This website isn't allowed to be used by others, this is 44th only, feel free to take some code as long as you credit me.

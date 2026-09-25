@@ -3,10 +3,12 @@ node_modules
 .git
 .vercel
 .gitignore
+.env.local
+*.tsbuildinfo
 *.code.workspace
 *.log
 Dockerfile*
 dockerfile
-README.md
 AGENTS.md
 CLAUDE.md
+BUILDDOCKER.md
