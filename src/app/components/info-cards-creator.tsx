@@ -28,9 +28,7 @@ export default function InfoCardsCreator({
               className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100"
             >
               <h3 className="text-xl font-bold mb-4">
-                <span className="bg-blue-900 text-white py-1 px-2 rounded">
-                  {info.title}
-                </span>
+                <u>{info.title}</u>
               </h3>
 
               <p className="mb-4">{info.description}</p>
