@@ -86,6 +86,7 @@ export function SiteHeader(): import("react").JSX.Element {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
+          aria-controls="site-header-nav"
         >
           <span className="sr-only">Toggle Menu</span>
           <div className="w-6 h-0.5 bg-gray-700 dark:bg-gray-300 mb-1"></div>
@@ -94,6 +95,7 @@ export function SiteHeader(): import("react").JSX.Element {
         </button>
 
         <nav
+          id="site-header-nav"
           className={`${
             isOpen ? "flex" : "hidden"
           } md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-(--surface) items-center gap-4 p-4 md:p-0 z-20`}
@@ -109,6 +111,9 @@ export function SiteHeader(): import("react").JSX.Element {
                 rel={item.rel}
                 title={item.title}
                 aria-current={isActive ? "page" : undefined}
+                onClick={() => {
+                  if (item.target !== "_blank") setIsOpen(false);
+                }}
                 className={`${item.classNames || "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"} px-2 py-2 transition-colors ${
                   isActive
                     ? "underline underline-offset-4 decoration-2 text-white!"
