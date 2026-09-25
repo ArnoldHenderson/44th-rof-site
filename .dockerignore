@@ -4,6 +4,8 @@ node_modules
 .vercel
 .gitignore
 .env.local
+.vscode
+.idea
 *.tsbuildinfo
 *.code.workspace
 *.log
