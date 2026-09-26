@@ -1,9 +1,22 @@
-# Docker Commands
+# Docker Deployment
 
-## Build Command
+## Run with NGINX
 
-### `docker build -t 44th-rof-site .`
+Start the Next.js app and NGINX reverse proxy:
 
-## Run Command
+```sh
+docker compose up --build -d
+```
 
-### `docker run --rm -p port:port -e PORT=port 44th-rof-site`
+Open `http://localhost`. NGINX listens on port 80 and forwards requests to the
+app over the private Compose network. View logs with `docker compose logs -f`
+and stop the services with `docker compose down`.
+
+## Run the app without NGINX
+
+The Dockerfile is lowercase, so specify it explicitly when building:
+
+```sh
+docker build -f dockerfile -t 44th-rof-site .
+docker run --rm -p 3000:3000 -e PORT=3000 44th-rof-site
+```
