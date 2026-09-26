@@ -42,15 +42,8 @@ export default function About() {
               activity after a few members the main one being TheRandomKC who
               pioneered through the ranks. KC would later be put in charge of
               the regiment following Gen. Ted&apos;s departure after he joined
-              Anvil Game Studios as a Community Manager.
-            </p>
-            <p>
-              The regiment is now in charge of Arnold Henderson who is
-              maintaining the ways of the old 44th mixed with modern Holdfast
-              and keeping the{" "}
-              <b>
-                <i>44th on top!</i>
-              </b>
+              Anvil Game Studios as a Community Manager. The regiment is now in
+              charge of Arnold Henderson.
             </p>
             <p className="text-yellow-400 font-bold">
               Join us today to help keep the 44th on Top!
