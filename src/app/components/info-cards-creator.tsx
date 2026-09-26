@@ -25,7 +25,7 @@ export default function InfoCardsCreator({
           {infoCards.map((info) => (
             <div
               key={info.title}
-              className="w-full max-w-sm rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100"
+              className="flex w-96 flex-none flex-col rounded-lg border border-gray-300 bg-surface p-6 shadow-lg dark:bg-gray-900 bg-gray-100"
             >
               <h3 className="text-xl font-bold mb-4">
                 <u>{info.title}</u>
@@ -33,17 +33,19 @@ export default function InfoCardsCreator({
 
               <p className="mb-4">{info.description}</p>
 
-              {info.links.map((link) => (
-                <Link
-                  key={`${link.link}-${link.linkTitle}`}
-                  href={link.link}
-                  target={link.linkTarget}
-                  rel={link.linkRel}
-                  className={link.linkStyle}
-                >
-                  {link.linkTitle}
-                </Link>
-              ))}
+              <div className="mt-auto">
+                {info.links.map((link) => (
+                  <Link
+                    key={`${link.link}-${link.linkTitle}`}
+                    href={link.link}
+                    target={link.linkTarget}
+                    rel={link.linkRel}
+                    className={`${link.linkStyle} inline-flex max-w-full`}
+                  >
+                    {link.linkTitle}
+                  </Link>
+                ))}
+              </div>
             </div>
           ))}
         </div>
