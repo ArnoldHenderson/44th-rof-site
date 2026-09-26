@@ -97,11 +97,18 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en-GB"
+      suppressHydrationWarning
       className={`${ubuntu.variable} ${roboto.variable} ${
         isDark ? "dark" : ""
       } h-full antialiased`}
     >
       <head>
+        {/* Runs before paint to apply system dark preference when no explicit theme cookie is set. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=document.cookie.match(/(?:^|; )theme=([^;]*)/);var t=m?decodeURIComponent(m[1]):null;var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);}catch(e){}})();`,
+          }}
+        />
         <noscript>You need to enable JavaScript to run this website.</noscript>
       </head>
       <body className="min-h-full flex flex-col">
