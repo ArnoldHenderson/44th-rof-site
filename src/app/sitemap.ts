@@ -5,7 +5,7 @@ import type { MetadataRoute } from "next";
  * @module Sitemap
  */
 
-const siteUrl = "https://44th-rof-site.vercel.app";
+const siteUrl = "https://44thholdfast.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

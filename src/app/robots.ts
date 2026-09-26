@@ -29,6 +29,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/private/", "/api/", "/components/", "/data/"],
       },
     ],
-    sitemap: "https://44th-rof-site.vercel.app/sitemap.xml",
+    sitemap: "https://44thholdfast.com/sitemap.xml",
   };
 }
