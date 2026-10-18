@@ -10,4 +10,4 @@ Discord Link to the 44th: [https://discord.gg/44th](https://discord.gg/44th)
 
 -# This website isn't allowed to be used by others, this is 44th only, feel free to take some code as long as you credit me.
 
-TestJenkin
+TestJenkins
