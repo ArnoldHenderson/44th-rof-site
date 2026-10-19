@@ -43,12 +43,22 @@ pipeline {
                 branch 'development'
             }
             steps {
-                sshagent(credentials: ['44th-rof-site-deploy']) {
+                withCredentials([
+                    sshUserPrivateKey(
+                        credentialsId: '44th-rof-site-deploy',
+                        keyFileVariable: 'SSH_KEY',
+                        usernameVariable: 'SSH_USER'
+                    )
+                ]) {
                     sh '''
-                        ssh -p 28190 \
+                        set -eu
+
+                        ssh -i "$SSH_KEY" \
+                            -p 28190 \
                             -o BatchMode=yes \
+                            -o IdentitiesOnly=yes \
                             -o StrictHostKeyChecking=yes \
-                            adminhendersonnelson@admin.nelson.co.uk \
+                            "$SSH_USER@admin.nelson.co.uk" \
                             "cd /home/adminhendersonnelson/44th-rof-site-dev && \
                              git fetch origin development && \
                              git checkout development && \
@@ -58,6 +68,7 @@ pipeline {
                 }
             }
         }
+
     }
 
 
