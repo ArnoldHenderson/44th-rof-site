@@ -37,7 +37,29 @@ pipeline {
                 sh 'npm run build'
             }
         }
+
+        stage('Deploy development') {
+            when {
+                branch 'development'
+            }
+            steps {
+                sshagent(credentials: ['44th-rof-site-deploy']) {
+                    sh '''
+                        ssh -p 28190 \
+                            -o BatchMode=yes \
+                            -o StrictHostKeyChecking=yes \
+                            adminhendersonnelson@admin.nelson.co.uk \
+                            "cd /home/adminhendersonnelson/44th-rof-site-dev && \
+                             git fetch origin development && \
+                             git checkout development && \
+                             docker compose -p 44th-rof-site-dev build web && \
+                             docker compose -p 44th-rof-site-dev up -d --no-deps web"
+                    '''
+                }
+            }
+        }
     }
+
 
     post {
         success {
