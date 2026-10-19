@@ -37,40 +37,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-
-        stage('Deploy to VPS') {
-            when {
-                branch 'main'
-            }
-
-            steps {
-                withCredentials([
-                    sshUserPrivateKey(
-                        credentialsId: '44th-rof-site-deploy',
-                        keyFileVariable: 'SSH_KEY',
-                        usernameVariable: 'SSH_USER'
-                    )
-                ]) {
-                    sh '''
-                        set -eu
-
-                        ssh \
-                            -i "$SSH_KEY" \
-                            -p 28190 \
-                            -o BatchMode=yes \
-                            -o IdentitiesOnly=yes \
-                            -o StrictHostKeyChecking=yes \
-                            "$SSH_USER@admin.nelson.co.uk" \
-                            "cd /home/adminhendersonnelson/44th-rof-site &&
-                             git fetch origin main &&
-                             git checkout main &&
-                             git reset --hard $GIT_COMMIT &&
-                             docker compose build web &&
-                             docker compose up -d --no-deps web"
-                    '''
-                }
-            }
-        }
     }
 
     post {
