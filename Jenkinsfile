@@ -43,30 +43,32 @@ pipeline {
                 branch 'development'
             }
             steps {
-                withCredentials([
-                    sshUserPrivateKey(
-                        credentialsId: '44th-rof-site-deploy',
-                        keyFileVariable: 'SSH_KEY',
-                        usernameVariable: 'SSH_USER'
-                    )
-                ]) {
-                    sh '''
-                        set -eu
+            withCredentials([
+                sshUserPrivateKey(
+                    credentialsId: '44th-rof-site-deploy',
+                    keyFileVariable: 'SSH_KEY',
+                    usernameVariable: 'SSH_USER'
+                )
+            ])
+            {
+            sh '''
+                set -eu
 
-                        ssh -i "$SSH_KEY" \
-                            -p 28190 \
-                            -o BatchMode=yes \
-                            -o IdentitiesOnly=yes \
-                            -o StrictHostKeyChecking=yes \
-                            "$SSH_USER@admin.nelson.co.uk" \
-                            "cd /home/adminhendersonnelson/44th-rof-site-dev && \
-                             git fetch origin development && \
-                             git checkout development && \
-                             git merge --ff-only origin/development &&"
-                    '''
-                }
-            }
+                ssh -i "$SSH_KEY" \
+                    -p 28190 \
+                    -o BatchMode=yes \
+                    -o IdentitiesOnly=yes \
+                    -o StrictHostKeyChecking=yes \
+                    "$SSH_USER@admin.nelson.co.uk" \
+                    "cd /home/adminhendersonnelson/44th-rof-site-dev && \
+                     git fetch origin development && \
+                     git checkout development && \
+                     git merge --ff-only origin/development"
+            '''
         }
+    }
+}
+
 
     }
 
