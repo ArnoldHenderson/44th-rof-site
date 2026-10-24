@@ -60,10 +60,9 @@ pipeline {
                             -o StrictHostKeyChecking=yes \
                             "$SSH_USER@admin.nelson.co.uk" \
                             "cd /home/adminhendersonnelson/44th-rof-site-dev && \
-                             git fetch origin development && \
-                             git checkout development && \
-                             docker compose -p 44th-rof-site-dev build web && \
-                             docker compose -p 44th-rof-site-dev up -d --no-deps web"
+                             git fetch origin development &&
+                             git checkout development &&
+                             git merge --ff-only origin/development &&"
                     '''
                 }
             }
