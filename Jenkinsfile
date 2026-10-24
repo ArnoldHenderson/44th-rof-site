@@ -68,11 +68,9 @@ pipeline {
                      docker compose -p 44th-rof-site-dev build web && \
                      docker compose -p 44th-rof-site-dev up -d --no-deps web"
             '''
+            }
         }
-    }
-}
-
-    }
+    }}
 
     post {
         success {
