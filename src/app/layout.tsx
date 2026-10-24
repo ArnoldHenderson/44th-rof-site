@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { cookies } from "next/headers";
 import type { Metadata } from "next";
@@ -30,14 +29,17 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "44th Regiment of Foot - Official Site",
   description:
-    "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War.",
+    "Official website for the 44th Regiment of Foot for the game Holdfast: Nations at War. 44th on top!",
   metadataBase: new URL("https://44thholdfast.com"),
   keywords: [
-    "44th Regiment of Foot",
-    "Official Site",
+    "44th regiment of foot",
+    "44th holdfast",
+    "44th regiment",
+    "official site",
     "Holdfast: Nations at War",
     "holdfast nations at war",
     "holdfast",
+    "holdfast naw",
     "holdfast regiment",
     "holdfast game",
     "holdfast console",
@@ -47,7 +49,6 @@ export const metadata: Metadata = {
     "holdfast british regiment",
     "holdfast uk regiment",
     "holdfast casual regiment",
-    "anvil game studios",
   ],
   authors: [{ name: "44th Regiment of Foot Regiment Command" }],
   icons: {
@@ -115,7 +116,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <SiteHeader />
         {children}
         <SiteFooter />
-        <Analytics />
         <SpeedInsights />
       </body>
     </html>

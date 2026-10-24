@@ -41,6 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 # VSCode
-/.vscode
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/tailwind-css-data.json
 *.code-workspace
 /.vs

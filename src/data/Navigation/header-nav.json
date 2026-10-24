@@ -11,12 +11,22 @@
   },
   {
     "key": "about",
-    "name": "About",
+    "name": "About Us",
     "href": "/about",
     "target": "_self",
     "rel": "",
     "classNames": "",
     "title": "Learn more about us",
+    "icon": ""
+  },
+  {
+    "key": "media",
+    "name": "Media",
+    "href": "/media",
+    "target": "_self",
+    "rel": "",
+    "classNames": "",
+    "title": "View our media gallery",
     "icon": ""
   },
   {
