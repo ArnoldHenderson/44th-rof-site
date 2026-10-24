@@ -60,8 +60,8 @@ pipeline {
                             -o StrictHostKeyChecking=yes \
                             "$SSH_USER@admin.nelson.co.uk" \
                             "cd /home/adminhendersonnelson/44th-rof-site-dev && \
-                             git fetch origin development &&
-                             git checkout development &&
+                             git fetch origin development && \
+                             git checkout development && \
                              git merge --ff-only origin/development &&"
                     '''
                 }

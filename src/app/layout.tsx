@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { cookies } from "next/headers";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -116,7 +115,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <SiteHeader />
         {children}
         <SiteFooter />
-        <SpeedInsights />
       </body>
     </html>
   );
