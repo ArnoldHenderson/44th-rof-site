@@ -38,11 +38,12 @@ pipeline {
             }
         }
 
-        stage('Deploy development') {
-            when {
-                branch 'development'
-            }
-            steps {
+
+    stage('Deploy development') {
+        when {
+            branch 'development'
+        }
+        steps {
             withCredentials([
                 sshUserPrivateKey(
                     credentialsId: '44th-rof-site-deploy',
@@ -63,15 +64,15 @@ pipeline {
                     "cd /home/adminhendersonnelson/44th-rof-site-dev && \
                      git fetch origin development && \
                      git checkout development && \
-                     git merge --ff-only origin/development"
+                     git merge --ff-only origin/development && \
+                     docker compose -p 44th-rof-site-dev build web && \
+                     docker compose -p 44th-rof-site-dev up -d --no-deps web"
             '''
         }
     }
 }
 
-
     }
-
 
     post {
         success {
